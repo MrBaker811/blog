@@ -1,38 +1,30 @@
-<%= image_tag "IMG_9569.jpg", :width => "100%", :class => "img-responsive" %>
-<div class="carousel-caption">
+<div class= "image">
+<%= image_tag "IMG_9569.jpg", :width => "100%", :class => "img-responsive" %> 
 
-<head><h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</h3>
-</head>
-</div>
+<h1_1>Crowns</h1_1>
+       </div>
 
 
-<div class="carousel-caption">
-<h1>Overlay</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
 
 </div>
- 
 
       
 <div class="jumbotron">
-  <h1>Listing Articles</h1>
+  <h2>Listing Articles</h2>
   </div>
+ 
 
-
-<%= image_tag "IMG_9684.jpg", :width => "100%", :class => "img-responsive" %>
-<div class="jumbotron">
-  </div>
-
-
-  
-
-<%= link_to 'New article', new_article_path %>
-<table>
+ 
+  <%= link_to 'New article', new_article_path %>
+  <div class="container">
+  <table>
   <tr>
     <th>Title</th>
     <th>Text</th>
     <th colspan="3"></th>
   </tr>
+</div>
 
  
 <% @articles.each do |article| %>

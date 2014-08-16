@@ -1,3 +1,31 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h1 { 
+   color: #f1c40f; 
+   font: bold 25px/45px Helvetica, Sans-Serif; 
+   letter-spacing: 0px;  
+   
+   padding: 15px; 
+}
+
+
+
+
+
+
+h1_1 { 
+   position: absolute; 
+   top: 30px; 
+   text-align: center;
+   font: bold 120px/250px Helvetica, Sans-Serif;
+   width: 100%;
+   color: #1abc9c; 
+}
+

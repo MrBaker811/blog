@@ -49,7 +49,5 @@ private
     params.require(:article).permit(:title, :text)
   end
 
- 
-
 
 end
