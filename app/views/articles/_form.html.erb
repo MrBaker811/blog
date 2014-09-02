@@ -11,6 +11,13 @@
   </div>
   <% end %>
   <p>
+    <div class="container">
+     <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control" %>
+  </div>
+</p>
+  <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
@@ -23,4 +30,5 @@
   <p>
     <%= f.submit %>
   </p>
+</div>
 <% end %>
