@@ -12,6 +12,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'disqus', '~> 1.0.4'
 gem 'bootstrap-sass'
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 
 
