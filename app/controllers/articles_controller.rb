@@ -1,4 +1,7 @@
 class ArticlesController < ApplicationController
+   before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
+
 
 
 
@@ -7,7 +10,9 @@ def new
 end
  
 def create
+
   @article = Article.new(article_params)
+  
  
   if @article.save
     redirect_to @article
@@ -22,9 +27,11 @@ end
 
 def index
   @articles = Article.all
+ 
 
   
 end
+
 
 
 def edit

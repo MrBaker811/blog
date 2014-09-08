@@ -3,12 +3,19 @@
 
 <h1_1>Crowns
 <br>Over<br>Cotton</h1_1>
+      
+
+<div class= "image">
+<%= image_tag "DeathtoStock_NotStock7.jpg", :width => "100%", :class => "img-responsive" %> 
+
+<h1_1>BROWN
+<br>BE<br>BETTER</h1_1>
        </div>
+        </div>
+
+       
 
 
-
-
-</div>
 
       
 <div class="jumbotron">
@@ -17,7 +24,11 @@
  
 
   <div class="container">
-  <%= link_to 'New Blog', new_article_path %>
+    <% if user_signed_in? %>
+  <%= link_to 'New Blog', new_article_path, class: "btn btn-primary" %>
+  <% end %>
+  </br>
+  
 
   
   
@@ -34,14 +45,16 @@
     <p>
      <%= time_ago_in_words article.created_at %> ago
 
-   
+    <% if user_signed_in? %>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Delete', article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+<% end %>
   
 <% end %>
-</div.
-</div>
+
+
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -56,3 +69,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</div>
+
+<%= link_to 'ADMIN', new_user_session_path %>
