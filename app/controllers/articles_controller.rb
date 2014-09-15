@@ -1,18 +1,18 @@
 class ArticlesController < ApplicationController
    before_action :authenticate_user!, except: [:index, :show]
-  before_action :correct_user, only: [:edit, :update, :destroy]
-
-
+   
 
 
 def new
   @article = Article.new
+
 end
  
 def create
 
   @article = Article.new(article_params)
   
+
  
   if @article.save
     redirect_to @article
@@ -26,7 +26,7 @@ def show
 end
 
 def index
-  @articles = Article.all
+   @articles = Article.all.order("created_at DESC")
  
 
   
@@ -57,8 +57,9 @@ end
 
 private
   
+  
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :photo)
   end
 
 

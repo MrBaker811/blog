@@ -1,3 +1,4 @@
+
 <div class= "image">
 <%= image_tag "IMG_9569.jpg", :width => "100%", :class => "img-responsive" %> 
 
@@ -12,7 +13,7 @@
 <br>BE<br>BETTER</h1_1>
        </div>
         </div>
-
+      
        
 
 
@@ -39,16 +40,20 @@
  
 <% @articles.each do |article| %>
 
-  
+
+  <td><%= image_tag article.photo.url(:medium) %></td>  
    <em><h2><%= link_to article.title %></h2></em>
    <td><%= article.text %></td>
-    <p>
-     <%= time_ago_in_words article.created_at %> ago
+   </br>
+    <%= time_ago_in_words article.created_at %> ago
+    
+     
 
     <% if user_signed_in? %>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Delete', article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <p>
 
 <% end %>
   
