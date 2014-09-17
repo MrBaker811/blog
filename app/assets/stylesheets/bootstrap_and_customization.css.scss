@@ -1,8 +1,22 @@
-$jumbotron-bg: #bdc3c7;
+@import url(http://fonts.googleapis.com/css?family=Pacifico|Playfair+Display:400,900&subset=latin,latin-ext);
+
+
+
+$jumbotron-bg: #ecf0f1;
 $body-bg: white;
-$navbar-default-bg: #7f8c8d;
-$navbar-default-link-color: #1abc9c;
-$brand-primary: #8e44ad;
+$font-family-sans-serif:                'Pacifico', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-default-bg: #34495e;
+$navbar-default-link-color: #f1c40f;
+$brand-primary: #f1c40f;
 
 
 @import 'bootstrap';
+
+
+
+
+
+.navbar-brand {
+     
+     font:  20px/20px Pacifico, Sans-Serif;
+}

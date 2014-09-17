@@ -1,5 +1,5 @@
 
-<div class="aligncenter" style="width:1436px;height:0;border-top:4px solid #3498db;font-size:0;">-</div>
+<div class="aligncenter" style="width:1436px;height:0;border-top:4px solid  #34495e;font-size:0;">-</div>
 
 <div class= "image">
 <%= image_tag "slaves-picking-cotton.png", :width => "100%", :class => "img-responsive" %> 
@@ -11,7 +11,7 @@
         </div>
       </div>
 
-  <div class="aligncenter" style="width:1436px;height:0;border-top:4px solid #3498db;font-size:0;">-</div>
+  <div class="aligncenter" style="width:1436px;height:0;border-top:4px solid #34495e;font-size:0;">-</div>
 </br>
 </br>
 
@@ -39,42 +39,61 @@
   
   
 
-   <em><h2><%= article.title %></h2></em>
-   <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #ecf0f1;font-size:0;">-</div> 
+   <em><h1><%= article.title %></h1></em>
+
+
+
+  
+   <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
    </br>
 <td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td> 
 </br>
 </br>
+ <span class="glyphicon glyphicon-pencil"></span> on
+ <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
+        <%= article.created_at.mday  %>
+        <%= article.created_at.year  %></strong>
 
 <div class="aligncenter" style="width:700px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
 </br>
-
+<p>
+ <div class="col-md-5">
+          <div class="panel panel-default">
+           <div class="panel-heading">Title</div>
+           <div class="panel-body">
 <td><%= truncate article.text,length: 350 %></td>
-  <strong><%= link_to "Read On ", article %></strong>
+<p_1><%= link_to "Read On ", article %></p_1></p>
+
 </br>
+ <% if user_signed_in? %>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Delete', article_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </br>
   <div class="aligncenter" style="width:1000px;height:0;border-top:4px inset #7f8c8d;font-size:0;">-</div>
- 
+
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
   
  </br>
    
-   <strong><%= time_ago_in_words article.created_at %> ago</strong>
+        
+
+   
     
    </br>
      </br>
      
 
-    <% if user_signed_in? %>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Delete', article_path(article),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <p>
 
+<% end %> 
 <% end %>
-  
-<% end %>
+
 
 
 <div id="disqus_thread"></div>
@@ -94,4 +113,4 @@
 </div>
 </div>
 
-<%= link_to 'ADMIN', new_user_session_path %>
+<em><%= link_to 'ADMIN', new_user_session_path %></em>

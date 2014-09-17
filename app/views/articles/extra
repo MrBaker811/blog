@@ -1,0 +1,40 @@
+extra
+
+   <em><h1><%= article.title %></h1></em>
+   <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
+
+   </br>
+<td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td> 
+</br>
+</br>
+
+<div class="aligncenter" style="width:700px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
+
+</br>
+<p>
+
+<td><%= truncate article.text,length: 350 %></td>
+<p_1><%= link_to "Read On ", article %></p_1></p>
+
+</br>
+</br>
+  <div class="aligncenter" style="width:1000px;height:0;border-top:4px inset #7f8c8d;font-size:0;">-</div>
+ 
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+
+
+  <div class="col-md-5">
+          <div class="panel panel-default">
+           <div class="panel-heading">Title</div>
+           <div class="panel-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</div>
+          </div>
+        </div>
+      </div>
+    </div>

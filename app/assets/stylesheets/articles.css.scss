@@ -7,10 +7,11 @@
    width: 100%; /* for IE 6 */
 }
 
-h1 { 
-   color: #f1c40f; 
-   font: bold 25px/45px Helvetica, Sans-Serif; 
+h1{ 
+   color: #34495e; 
+   font: bold 25px/45px Pacifico, Sans-Serif; 
    letter-spacing: 0px;  
+   
    
    padding: 15px; 
 }
@@ -24,9 +25,9 @@ h1_1 {
    position: absolute; 
    top: 30px; 
    text-align: center;
-   font: bold 120px/250px Helvetica, Sans-Serif;
+   font: bold 120px/250px Pacifico, Sans-Serif;
    width: 100%;
-   color: #d35400; 
+   color: #f1c40f; 
 }
 
 h3 { 
@@ -34,10 +35,33 @@ h3 {
 
    text-align: center; 
    
+   
  
 }
 
 .style_image {
-  border: 1px solid white;
+  border: 1px solid #95a5a6;
+}
+
+p {
+    font-family: Playfair Display, Sans-Serif;
+     font-size: 21px;
+    
+
+     
+
+} 
+
+p_1 {
+   font-family: Pacifico, Sans-Serif;
+   font-size: 15px;
+
+}
+
+p_2{
+
+   font-family: Playfair Display, Sans-Serif;
+     font-size: 21px;
+    text-align: center;
 }
 

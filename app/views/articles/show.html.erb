@@ -1,24 +1,36 @@
 <div class= "container">
+  
 <%= image_tag @article.photo.url(:large) %>
 
 
 
 
 <p>
-  <div class= "jumbotron">
   
-  <em><h2><%= @article.title %></h2></em>
-  <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #ecf0f1;font-size:0;">-</div> 
+  
+  <h1><%= @article.title %></h1></em>
+  <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
    </br>
+ 
 </p>
  
-<p>
-  
-  <%= @article.text %>
-   <div class="aligncenter" style="width:1000px;height:0;border-top:4px outset #bdc3c7;font-size:0;">-</div>
+ 
+  <p>
+ <%= @article.text %>
+
+   <div class="aligncenter" style="width:1000px;height:0;border-top:4px outset #7f8c8d;font-size:0;">-</div>
  
   
  </br>
+
+    <% if user_signed_in? %>
+    <%= link_to 'Back', articles_path %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+  
+  <% end %>
+
+
+
 </p>
  
 
@@ -38,10 +50,14 @@
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 </div>
- 
+ <div class="container">
+    <% if user_signed_in? %>
+    <%= link_to 'Back', articles_path %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+  
+  <% end %>
 
-<%= link_to 'Back', articles_path %>
-<%= link_to 'Edit', edit_article_path(@article) %>
+
 </div>
 </div>
 </div>
