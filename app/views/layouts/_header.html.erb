@@ -1,19 +1,27 @@
-<nav class="navbar navbar-static-top navbar-default" role="navigation">
+ <div id="nav-wrapper">
+    <div id="nav" class="navbar-static-top ">
+      <nav class="navbar navbar-static-top navbar-default" role="navigation">
+
   
   <!-- Brand and toggle get grouped for better mobile display -->
+ 
+  
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" <%= link_to "CROWNS/COTTON", root_path %>
-  </div>
+    <a class="navbar-brand page-scroll"<%= link_to "CROWNS/COTTON", root_path %>
+  </div> 
+
+
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav ">
+       
       
       
           <% if user_signed_in? %>
@@ -23,6 +31,12 @@
          
         <% end %>
     </ul>
-  </div><!-- /.navbar-collapse -->
+  
+
+  <!-- /.navbar-collapse -->
 <!-- /.container --> 
 </nav>
+</div>
+</div>
+</div>
+</div>

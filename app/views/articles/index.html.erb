@@ -1,5 +1,8 @@
+<div class="aligncenter" style="width:1436px;height:0;border-top:8px solid  #e74c3c;font-size:0;">-</div>
+<div class="aligncenter" style="width:1436px;height:0;border-top:8px solid  #1abc9c;font-size:0;">-</div>
 
-<div class="aligncenter" style="width:1436px;height:0;border-top:4px solid  #34495e;font-size:0;">-</div>
+
+
 
 <div class= "image">
 <%= image_tag "slaves-picking-cotton.png", :width => "100%", :class => "img-responsive" %> 
@@ -10,13 +13,71 @@
        
         </div>
       </div>
-
-  <div class="aligncenter" style="width:1436px;height:0;border-top:4px solid #34495e;font-size:0;">-</div>
+  <div class="aligncenter" style="width:1436px;height:0;border-top:8px solid  #e74c3c;font-size:0;">-</div>
+  <div class="aligncenter" style="width:1436px;height:0;border-top:8px solid #1abc9c;font-size:0;">-</div>
 </br>
 </br>
 
+<div class="container">
+  <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <%= image_tag "IMG_9569.jpg", :width => "400x400", :class => "img-responsive" %> 
+            <div class="panel-footer">
+              <center><p>Services</p></center></div>
 
- 
+                  <h3>Agency</h3>
+                  
+                  <center><p>A one page agency theme.</p></center>
+
+                      <center><div class="btn btn-primary"><p_1>Preview</p_1></center>
+                     
+                     
+          </div>
+        </div>
+      
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <%= image_tag "IMG_9569.jpg", :width => "400x400", :class => "img-responsive" %> 
+            <div class="panel-footer">
+              <center><p>Services</p></center></div>
+
+                  <h3>Agency</h3>
+                  
+                  <center><p>A one page agency theme.</p></center>
+
+                      <center><div class="btn btn-primary"><p_1>Preview</p_1></center>
+                     
+                     
+                     </div>
+        </div>
+      
+
+    <div class="container">
+  <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+            <%= image_tag "IMG_9569.jpg", :width => "400x400", :class => "img-responsive" %> 
+            <div class="panel-footer">
+              <p>Services</p></div>
+
+                  <h3>Agency</h3>
+                  
+                  <p>A one page agency theme.</p>
+
+                      <div class="btn btn-primary"><p_1>Preview</p_1>
+                     
+                     
+                     </div>
+        </div>
+      </div>
+    </div>
+</br>
+</br>
+
 
   <div class="container">
     <% if user_signed_in? %>
@@ -53,32 +114,30 @@
  <span class="glyphicon glyphicon-pencil"></span> on
  <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
         <%= article.created_at.mday  %>
-        <%= article.created_at.year  %></strong>
+        <%= article.created_at.year  %></strong> by
+        <%= image_tag "IMG_0187.jpg", :width => "40x40", :class => "img-circle"  %> K-bear
 
 <div class="aligncenter" style="width:700px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
 </br>
-<p>
- <div class="col-md-5">
-          <div class="panel panel-default">
-           <div class="panel-heading">Title</div>
-           <div class="panel-body">
+<p_2>
+ 
 <td><%= truncate article.text,length: 350 %></td>
-<p_1><%= link_to "Read On ", article %></p_1></p>
+<p_1><%= link_to "Read On ", article %></p_1>
+</p_2>
 
 </br>
  <% if user_signed_in? %>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Delete', article_path(article),
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                   
+                    
 </br>
   <div class="aligncenter" style="width:1000px;height:0;border-top:4px inset #7f8c8d;font-size:0;">-</div>
 
- </div>
- </div>
- </div>
- </div>
- </div>
+ 
+ 
   
  </br>
    
