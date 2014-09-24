@@ -41,6 +41,7 @@ h3 {
 
 .style_image {
   border: 1px solid #95a5a6;
+  float: left;
 }
 
 p {
@@ -60,7 +61,7 @@ p_2{
 
    font-family: Playfair Display, Sans-Serif;
      font-size: 17px;
-    text-align: center;
+    text-align: left;
 }
 
 .thumbnail {
@@ -76,6 +77,33 @@ p_2{
     width: 100%
     
 }
+
+.divider{
+    position:absolute;
+    left:50%;
+    top:70%;
+    bottom:10%;
+    border-left:1px solid red;
+}
+
+.show{
+  text-align: center;
+  padding-right: 400px;
+}
+
+.post{
+  text-align: center;
+  padding-right: 200px;
+}
+
+.author{
+  text-align: center;
+  padding-right: 200px;
+}
+
+
+
+
 
 
 

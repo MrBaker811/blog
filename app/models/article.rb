@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
  belongs_to :user
-  has_attached_file :photo, :styles => { :medium => "500x500>", :large => "500x2000>" }
+  has_attached_file :photo, :styles => { :medium => "450x450>", :large => "500x2000>" }
  validates_attachment_content_type :photo, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
 
