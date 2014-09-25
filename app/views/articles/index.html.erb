@@ -5,18 +5,20 @@
 
 
 <div class= "image">
-<%= image_tag "slaves-picking-cotton.png", :width => "100%", :class => "img-responsive" %> 
+  <%= image_tag "slaves-picking-cotton.png", :width => "100%", :class => "img-responsive" %> 
 
-<h1_1>Crowns
-<br>Over<br>Cotton</h1_1>
+        <h1_1>Crowns
+        <br>Over<br>Cotton</h1_1>
       
        
-        </div>
-      </div>
+    </div>
+      
   <div class="aligncenter" style="width:1436px;height:0;border-top:8px solid  #e74c3c;font-size:0;">-</div>
   <div class="aligncenter" style="width:1436px;height:0;border-top:8px solid #1abc9c;font-size:0;">-</div>
-</br>
-</br>
+
+
+    </br>
+    </br>
 
 <div class="container">
   <div class="row">
@@ -52,105 +54,196 @@
                       <center><div class="btn btn-primary"><p_1>Preview</p_1></center>
                      
                      
-                     </div>
+           </div>
         </div>
       
 
     <div class="container">
-  <div class="row">
-      <div class="col-lg-4 col-sm-6">
+      <div class="row">
+       <div class="col-lg-4 col-sm-6">
         <div class="thumbnail">
             <%= image_tag "IMG_9569.jpg", :width => "400x400", :class => "img-responsive" %> 
-            <div class="panel-footer">
-              <p>Services</p></div>
+              <div class="panel-footer">
+                <p>Services</p></div>
 
-                  <h3>Agency</h3>
+                   <h3>Agency</h3>
                   
-                  <p>A one page agency theme.</p>
+                       <p>A one page agency theme.</p>
 
-                      <div class="btn btn-primary"><p_1>Preview</p_1>
+                        <div class="btn btn-primary"><p_1>Preview</p_1>
                      
                      
-                     </div>
+          </div>
         </div>
       </div>
     </div>
-
-
-
-
-  <div class="container">
-    <% if user_signed_in? %>
-  <%= link_to 'New Blog', new_article_path, class: "btn btn-primary btn-lg" %>
-  <% end %>
-  </br>
   
 
-  
-  
- 
 
- 
+   
+  
     
-   <div class="aligncenter" style="width:1100px;height:0;border-top:2px outset #e74c3c;font-size:0;">-</div>
-<% @articles.each do |article| %>
+  <div class="aligncenter" style="width:1100px;height:0;border-top:2px solid #f1c40f;font-size:0;">-</div>
+<div class="container">
+  <div class="row">
+    
+
+  <%= image_tag "crown31.png", :width => "6%", :class => "img-responsive" %>
+
+   <div class="aligncenter" style="width:69px;height:0;border-top:4px solid #e74c3c;font-size:0;"></div>
+ </br>
+  <div class="aligncenter" style="width:69px;height:0;border-top:4px solid black;font-size:0;"></div>
+  </br>
+   <div class="aligncenter" style="width:69px;height:0;border-top:4px solid #27ae60;font-size:0;"></div>
+
+
+  <%= image_tag "cloud294.png", :width => "6%", :class => "style_image_2" %>
 
  
-  
-  
-  
+  <div class="col-lg-6 col-sm-6">
+      <div class="title">
+          <p_3>Blog</p_3></div>
 
+
+
+
+  
+  
  
+  </div>
+  </div>
+</div>
+</div>
 
 
+  
+  </br>
+    <div class="container">
+  <div class="aligncenter" style="width:1100px;height:0;border-top:2px solid #f1c40f;font-size:0;">-</div>
+</br>
+
+    <% if user_signed_in? %>
+     <%= link_to 'New Blog', new_article_path, class: "btn btn-primary btn-lg" %>
+  <% end %>
+</br>
+  
 
 
+  <% @articles.each do |article| %>
 
-
-   </br>
+  </br>
+    
     <div class="container">
        <div class="row">
+         <td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td> 
   
-<td><%= image_tag article.photo.url(:medium), :class => "style_image" %> 
-  
-      <div class="col-lg-6 col-sm-6">
-        <div class="post">
-   <em><h1><%= article.title %></h1></em></div>
+          <div class="col-lg-6 col-sm-6">
+            <div class="post">
+             <p_3><%= article.title %></p_3>
+           </div>
+   
    <div class="author">
-   <span class="glyphicon glyphicon-pencil"></span> on
- <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
-        <%= article.created_at.mday  %>
-        <%= article.created_at.year  %></strong> by
-        <%= image_tag "IMG_0187.jpg", :width => "40x40", :class => "img-circle"  %> K-bear</div>
+       <span class="glyphicon glyphicon-pencil"></span> on
+        <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
+           <%= article.created_at.mday  %>
+            <%= article.created_at.year  %></strong>
+          </br>
+           </br>
+
+             
 
 
-<p_2>
-<td><%= truncate article.text,length: 350 %></td>
-<p_1><%= link_to "Read On ", article %></p_1></td>
-</p_2>
-<div class="aligncenter" style="width:475px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
+ <p_2>
+  <td><%= truncate article.text,length: 350 %></td>
+   <p_1><%= link_to "Read On ", article %></p_1></td>
+    </p_2>
+
+
+<div class="aligncenter" style="width:350px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
         </div>
-</div>
-</div>
+       </div>
+      </div>
+    </div>
         
-      
+    </br>
 
-<div class="aligncenter" style="width:1000px;height:0;border-top:4px inset #7f8c8d;font-size:0;">-</div>
+    <% if user_signed_in? %>
+       <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Delete', article_path(article),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+          
+     <div class="aligncenter" style="width:800px;height:0;border-top:2px inset #7f8c8d;font-size:0;">-</div> 
+    <% end %>
+
+  </br>
+
+</div>
+
+ <div class="aligncenter" style="width:1100px;height:0;border-top:2px solid #f1c40f;font-size:0;">-</div>
+<div class="container">
+  <div class="row">
+    
+
+  <%= image_tag "crown31.png", :width => "6%", :class => "img-responsive" %>
+
+   <div class="aligncenter" style="width:69px;height:0;border-top:4px solid #e74c3c;font-size:0;"></div>
+ </br>
+  <div class="aligncenter" style="width:69px;height:0;border-top:4px solid black;font-size:0;"></div>
+</br>
+   <div class="aligncenter" style="width:69px;height:0;border-top:4px solid #27ae60;font-size:0;"></div>
+
+
+  <%= image_tag "cloud294.png", :width => "6%", :class => "style_image_2" %>
+
+ 
+  <div class="col-lg-6 col-sm-6">
+      <div class="title">
+         <p_3>Author</p_3>
+       </div>
+
+
+
+
+       
+  
+  
+ 
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="aligncenter" style="width:1100px;height:0;border-top:2px solid #f1c40f;font-size:0;">-</div>
 
 </br>
- <% if user_signed_in? %>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Delete', article_path(article),
-                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  
+</br>
 
-<% end %> 
-<% end %>
-
+ 
+<div class="container">
+<div class="jumbotron">
+  <center> <%= image_tag "IMG_0187.jpg", :width => "200x200", :class => "img-circle"  %></center>
+  <center><h1>KRISTIN</h1></center>
+  <div class="aligncenter" style="width:900px;height:0;border-top:2px solid #f1c40f;font-size:0;">-</div>
+<p_3>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo</p_3>  
 </div>
+</div>
+</br>
+<div class="aligncenter" style="width:1180px;height:0;border-top:2px solid #1abc9c;font-size:0;">-</div>
+</div>
+
+
+       <div id="targets">
+    <div id="target-1">
+        <a href="#target-2">Jump to target 2</a>
+         </div>
 
 
 
 
 <em><%= link_to 'ADMIN', new_user_session_path %></em>
+</br>
+</br>
+</br>
+</br>

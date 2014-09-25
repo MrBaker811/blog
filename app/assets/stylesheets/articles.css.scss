@@ -9,8 +9,9 @@
 
 h1{ 
    color: #34495e; 
-   font: bold 25px/45px Pacifico, Sans-Serif; 
-   letter-spacing: 0px;  
+   font: bold 45px/45px Pacifico, Sans-Serif; 
+   letter-spacing: 0px; 
+
    
    
    padding: 15px; 
@@ -44,6 +45,11 @@ h3 {
   float: left;
 }
 
+.style_image_2 {
+  
+  float: left;
+}
+
 p {
     font-family: Playfair Display, Sans-Serif;
      font-size: 17px;
@@ -53,7 +59,7 @@ p {
 
 p_1 {
    font-family: Pacifico, Sans-Serif;
-   font-size: 15px;
+   font-size: 20px;
 
 }
 
@@ -64,6 +70,11 @@ p_2{
     text-align: left;
 }
 
+p_3 {
+   font-family: Pacifico, Sans-Serif;
+   font-size: 42px;
+
+}
 .thumbnail {
   
   text-align: center;
@@ -88,12 +99,21 @@ p_2{
 
 .show{
   text-align: center;
-  padding-right: 400px;
+  padding-right: 200px;
+   font-size: 75px;
 }
 
+.title{
+    text-align: center;
+  padding-right: 500px;
+
+   
+
+}
 .post{
   text-align: center;
   padding-right: 200px;
+   
 }
 
 .author{
@@ -101,7 +121,7 @@ p_2{
   padding-right: 200px;
 }
 
-
+#target-2 { background:#888; }
 
 
 
