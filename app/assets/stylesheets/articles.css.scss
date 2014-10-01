@@ -3,8 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
+   position: static; 
+  width: 100%;
+    /* for IE 6 */
 }
 
 h1{ 
@@ -17,9 +18,15 @@ h1{
    padding: 15px; 
 }
 
-
-
-
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters [class^="col-"],
+.row.no-gutters [class*=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
+}
 
 
 h1_1 { 
@@ -75,6 +82,13 @@ p_3 {
    font-size: 42px;
 
 }
+
+p_4{
+  font-size: 19px;
+
+
+}
+
 .thumbnail {
   
   text-align: center;
@@ -88,6 +102,11 @@ p_3 {
     width: 100%
     
 }
+
+
+
+  
+
 
 .divider{
     position:absolute;
@@ -120,19 +139,6 @@ p_3 {
   text-align: center;
   padding-right: 200px;
 }
-
-
-
-#targets div {
-    height:400px;
-    padding-left:5px;
-}
-
-#target-1 { background:#888; }
-#target-2 { background:#999; }
-#target-3 { background:#AAA; }
-#target-4 { background:#BBB; }
-#target-5 { background:#CCC; }
 
 
 

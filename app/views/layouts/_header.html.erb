@@ -1,6 +1,7 @@
  <div id="nav-wrapper">
     <div id="nav" class="navbar-static-top ">
       <nav class="navbar navbar-static-top navbar-default" role="navigation">
+         
 
 
   
@@ -14,57 +15,39 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand"
-      <%= link_to "CROWNS/COTTON", root_path %>
+     <a class="navbar-brand page-scroll" <%= link_to "CROWNS/COTTON", root_path %>
+    </div>
 
 
-  </div> 
-  <div class="container">
+
+
+   <div class="container">
    <div class="collapse navbar-collapse navbar-ex1-collapse">
      <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    
-
-                  <div id="anchors">
-        <a href="#Blog">Blog</a>
-    </div>
-        <div id="anchors_2">
-        <a href="#Authors">Authors</a>
-      </div>
-      
-
-    
-                   
-                   
-                </ul>
-              </div>
+        
+                    <li>
+                        <a class="page-scroll" href="#Blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Authors">Authors</a>
+                    </li>
 
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav ">
-    
-
-       
-      
-      
           <% if user_signed_in? %>
-            
-          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-           
-         
-        <% end %>
+            <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+      <% end %>
+    
     </ul>
-  
-
-  <!-- /.navbar-collapse -->
-<!-- /.container --> 
+     </div>
+   </div>
+  </div>
+</div> 
+</div>
 </nav>
-</div>
-</div>
-</div>
-</div>
+
+
 
 
