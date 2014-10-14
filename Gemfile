@@ -18,7 +18,9 @@ gem 'atomic', '~> 1.1.16'
 gem 'devise'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
-
+gem 'social-share-button', '~> 0.1.6'
+gem 'mailchimp-api', '~> 2.0.5'
+gem 'gibbon', '~> 1.1.3'
 
 
 gem 'sdoc', '~> 0.4.0',          group: :doc

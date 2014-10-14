@@ -1,40 +1,372 @@
+"remember css justify"
+.row.no-gutters {
+margin-right: 0;
+margin-left: 0;
+}
+
+.row.no-gutters [class^="col-"],
+.row.no-gutters [class*=" col-"]{
+padding-right: 0;
+padding-left: 0;
+}
+
+
+
+
+
+
+
+start....
 extra
+<div style="border-left:thin #95a5a6 outset; left:2px; height:500px;" />
+<div style="border-right:thin #95a5a6 inset; right:2px; height:2500px;" />
 
-   <em><h1><%= article.title %></h1></em>
-   <div class="aligncenter" style="width:400px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
-   </br>
-<td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td> 
-</br>
-</br>
 
-<div class="aligncenter" style="width:700px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div> 
 
-</br>
-<p>
 
+<div class="row">
+	<div class="col-md-3">
+<p_2>
 <td><%= truncate article.text,length: 350 %></td>
-<p_1><%= link_to "Read On ", article %></p_1></p>
+<p_1><%= link_to "Read On ", article %></p_1></td>
+</p_2>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+index
+<div class= "image">
+			<%= image_tag "slaves-picking-cotton.png", :size => "1436x500" %>
+</div>
+
+
+
+<div class="aligncenter" style="width:1440px;height:0;border-top:8px solid #95a5a6;font-size:0;">-</div>	
+
+
+
+
+<br>
+
+	
+<div id="Blog"></div>
+	
+			</br>
+			</br>
+			</br>
+<div class="container">
+	<div class="aligncenter" style="width:1040px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div>
+	
+				<center><%= image_tag "crown31.png", :width => "6%", :class => "img-responsive" %></center>
+				<center><div class="aligncenter" style="width:140px;height:0;border-top:4px solid #1abc9c;font-size:0;"></div></center>
+				<center><%= image_tag "cloud294.png", :width => "6%", :class => "img-responsive" %></center>
+</div>
+	
+
+
+
+
+			
+	
+
+<center><div class="aligncenter" style="width:440px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div></center>
+
+
+
+
+	
+
+
 
 </br>
+
+	<div class="container">
+			<% if user_signed_in? %>
+				<%= link_to 'New Blog', new_article_path, class: "btn btn-primary btn-lg" %>
+			<% end %>
+		
+		
+					<% @articles.each do |article| %>
+<div class="container">
+		<div class="row">
+				<div class="word">
+				<center><p_3><%= article.title %></p_3></center>
+
+
+<div class="author">
+<center><span class="glyphicon glyphicon-pencil"></span> on
+<strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
+<%= article.created_at.mday %>
+<%= article.created_at.year %></strong></center>
+	</div>
+
+
+
+<center><div class="aligncenter" style="width:340px;height:0;border-top:1px outset #7f8c8d;font-size:0;">-</div></center>
+<br>
+
+
+
+<div class="extra">
+
+<center><td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td></center>
+
+<center><p_1><%= link_to "Read On ", article %></p_1></td></center>
+</div>
+
+		
+<br>
+<center><div class="aligncenter" style="width:650px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div></center>
+
+
+
+
+
+
 </br>
-  <div class="aligncenter" style="width:1000px;height:0;border-top:4px inset #7f8c8d;font-size:0;">-</div>
- 
-  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+<div class="extra">
+<center>
+<% if user_signed_in? %>
+<td><%= link_to 'Edit', edit_article_path(article) %></td>
+<td><%= link_to 'Delete', article_path(article),
+method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<% end %>
+
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<center><div class="aligncenter" style="width:1000px;height:0;border-top:1px solid #1abc9c;font-size:0;">-</div></center>
+<br>
+
+
+<% end %>
+</div>
+<div class="container">
+<div class="pages">
+<%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+</div>
+</div>
+
+
+ <div id="Authors">
+</br>
+</br>
+</br>
+
+<div class="container">
+<center><div class="aligncenter" style="width:240px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div></center>
+	<center><%= image_tag "crown31.png", :width => "6%", :class => "img-responsive" %>
+<center><div class="aligncenter" style="width:340px;height:0;border-top:4px solid #1abc9c;font-size:0;"></div></center>
+<center><%= image_tag "cloud294.png", :width => "6%", :class => "img-responsive" %></center>
+<div class="container">
+<center><div class="aligncenter" style="width:440px;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div></center></div>
+</br>
+
+
+		
+	
+
+<div style="border-left:2px solid #1abc9c;width:800px;"><div>
 
 
 
 
-  <div class="col-md-5">
-          <div class="panel panel-default">
-           <div class="panel-heading">Title</div>
-           <div class="panel-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores 
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</div>
-          </div>
-        </div>
-      </div>
+</div>
+</div>
+</div>
+</div>
+<div class="aligncenter" style="width:1432px;height:0;border-top:2px solid #e67e22;font-size:0;">-</div>
+<div class="jumbotron">
+  <center> <%= image_tag "IMG_0187.jpg", :width => "200x200", :class => "img-circle" %></center>
+    <center><h1>KRISTIN</h1></center>
     </div>
+
+
+
+
+</div>
+</div>
+</div>
+	
+
+</br>
+
+
+</br>
+<div class="aligncenter" style="width:1432px;height:0;border-top:2px solid #e67e22;font-size:0;">-</div>
+<div class="row">
+		<%= image_tag "DeathtoStock_Simplify10.jpg", :size => "300x300" %>
+		<%= image_tag "DeathtoStock_Simplify4.jpg", :size => "500x300" %>
+			<%= image_tag "DeathtoStock_Simplify8.jpg", :size => "300x300" %>
+			<%= image_tag "DeathtoStock_NotStock7.jpg", :size => "300x300" %>
+			  </div>
+			</br>
+<div class="row">
+			<%= image_tag "DeathtoStock_Simplify10.jpg", :size => "300x300" %>
+			<%= image_tag "DeathtoStock_Simplify8.jpg", :size => "300x300" %>
+		<%= image_tag "DeathtoStock_Simplify4.jpg", :size => "500x300" %>
+			
+			<%= image_tag "DeathtoStock_NotStock7.jpg", :size => "300x300" %>
+	
+</div>
+<div class="aligncenter" style="width:1429px;height:0;border-top:2px solid #e67e22;font-size:0;">-</div>
+<br>
+<center><div class="aligncenter" style="width:1180px;height:0;border-top:2px dotted #e74c3c;font-size:0;">-</div></center>
+<div class="container">
+<center><em><%= link_to 'ADMIN', new_user_session_path %></em></center>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+css
+
+.image {
+position: static;
+width: 100%;
+/* for IE 6 */
+}
+
+
+
+h1 {
+color: #34495e;
+font: bold 45px/45px Pacifico, Sans-Serif;
+letter-spacing: 0px;
+padding: 15px;
+}
+
+.row.no-gutters {
+margin-right: 0;
+margin-left: 0;
+}
+
+.row.no-gutters [class^="col-"],
+.row.no-gutters [class*=" col-"]{
+padding-right: 0;
+padding-left: 0;
+}
+
+h1_1 {
+position: absolute;
+top: 60px;
+text-align: center;
+font: bold 150px/150px Pacifico, Sans-Serif;
+width: 100%;
+color: #2c3e50;
+}
+h3 {
+text-align: center;
+}
+
+
+.style_image{
+border: 1px solid #95a5a6;
+float: center;
+
+
+}
+
+.style_image_3 {
+border: 1px solid #95a5a6;
+float: right;
+
+}
+
+.style_image_2 {
+float: left;
+}
+
+p {
+font-family: Playfair Display, Sans-Serif;
+font-size: 17px;
+}
+
+p_1 {
+font-family: Pacifico, Sans-Serif;
+font-size: 20px;
+}
+
+p_2 {
+font-family: Playfair Display, Sans-Serif;
+font-size: 17px;
+float: left;
+text-align: center;
+padding-right: 50px;
+}
+
+p_3 {
+font-family: Pacifico, Sans-Serif;
+font-size: 42px;
+
+}
+
+p_4 {
+font-size: 19px;
+}
+
+
+#nav.affix {
+position: fixed;
+top: 0;
+width: 100%
+}
+
+.show {
+text-align: center;
+padding-right: 200px;
+font-size: 75px;
+}
+
+.title {
+text-align: center;
+padding-right: 500px;
+}
+
+.word {
+	padding-right: 50px;
+}
+
+.extra {
+	padding-left: 30px;
+}
+.pages {
+float: right;
+}
+
+.social-buttons{
+	float: right;
+}
+
+.line{
+	margin-right: -200px;
+
+}
+.thumb{
+	float: right;
+	border-left: 100px;
+
+}
+
+.borders {
+background-image: border-left;
+}
+
