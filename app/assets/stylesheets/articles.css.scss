@@ -26,15 +26,61 @@ top: 60px;
 text-align: center;
 font: bold 150px/150px Pacifico, Sans-Serif;
 width: 1500px;
-color: #7f8c8d;
+color: #f1c40f;
+}
 
+h1_2{
+    position: absolute;
+top: 5800px;
+text-align: center;
+font: bold 100px/100px Pacifico, Sans-Serif;
+width: 1500px;
+color: white;
+}
+
+h1_3{
+    position: absolute;
+top: 6050px;
+text-align: center;
+font: bold 31px/31px Pacifico, Sans-Serif;
+width: 1500px;
+color: #f1c40f;
+}
+.email{
+      position: absolute;
+top: 6100px;
+margin-left: 525px;
+
+}
+.ebutton{
+position: absolute;
+ margin-left: 360px; 
+ top: 0px;
+
+    
+}
+.social{
+    position: absolute;
+  margin-left: 20px; 
+ top: 4600px;
+}
+.sharing{
+   
+float: right;
 }
 
 
+.mystyle input[type="text"] {
+   height: 50px;
+   font-size: 25px;
+   line-height: 50px;
+   width:360px;
+   
+}
 
 .work{
 	position: absolute;
-	 height:1929px;
+	 height:2070px;
     line-height:200px;
     border-left:1px outset #7f8c8d;
     margin-left: 0px;
@@ -42,11 +88,11 @@ color: #7f8c8d;
 
 .frame{
 	position: absolute;
-	 height:1920px;
+	 height:2050px;
     line-height:200px;
     border-right:1px inset #7f8c8d;
-    margin-left: 1229px;
-    top: 2676px;
+    margin-left: 1215px;
+    top: 2815px;
 }
 
 .cop {
@@ -61,7 +107,7 @@ color: #7f8c8d;
     content:"";
     margin: 0 auto; /* this centers the line to the full width specified */
     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 1990px; left: 0; right: 0; bottom: 0;
+    top: 2130px; left: 0; right: 0; bottom: 0;
     width: 100%;
     z-index: -1;
 }
@@ -140,9 +186,6 @@ text-align: center;
 padding-right: 500px;
 }
 
-.word {
-	margin-left: 50px;
-}
 
 .extra {
 	padding-left: 30px;

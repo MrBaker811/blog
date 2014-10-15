@@ -1,3 +1,21 @@
+
+#transparent header
+// Transparent header requires the first index slice to have some extra top-padding so that it's vertically centered between the bottom of the header
+      // and the top of the next slice. We do this in plain javascript so that it happens quickly enough to avoid seeing the page jump.
+      
+      var headerPosition = window.getComputedStyle(document.getElementById('header'), null).getPropertyValue('position');
+      var headerImageHeight = document.querySelector('#header .header-inner h1').offsetHeight;
+      var headerPaddingTop = parseInt(window.getComputedStyle(document.querySelector('#header .header-inner'), null).paddingTop, 10);
+      var extraPadding = (headerImageHeight + headerPaddingTop) / 2;
+
+      if (headerPosition == 'absolute' && document.querySelectorAll('.main-content .index-section:first-child .index-section-wrapper.has-main-image').length > 0) {
+        if (document.querySelectorAll('.main-content .index-section:first-child .index-section-wrapper.has-main-image .index-gallery').length === 0) {
+          document.querySelector('.main-content .index-section:first-child .index-section-wrapper.has-main-image .content-inner').style.paddingTop=extraPadding + 'px';
+        }
+      }
+
+
+
 "remember css justify"
 .row.no-gutters {
 margin-right: 0;
@@ -370,3 +388,15 @@ float: right;
 background-image: border-left;
 }
 
+#blog sided by set truncate
+<div class="container">
+<div class="row">
+	<div class="col-md-3">
+		<div class="press">
+<p_2>
+<td><%= truncate article.text,length: 350 %></td>
+<p_1><%= link_to "Read On ", article %></p_1></td>
+</p_2>
+</div>
+<div class="col-md-offset-12">
+<center><td><%= image_tag article.photo.url(:medium), :class => "style_image" %></td></center>
