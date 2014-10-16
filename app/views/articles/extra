@@ -1,3 +1,6 @@
+#scrolling share buttons
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
 
 #transparent header
 // Transparent header requires the first index slice to have some extra top-padding so that it's vertically centered between the bottom of the header

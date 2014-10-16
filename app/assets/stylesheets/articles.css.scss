@@ -7,10 +7,19 @@ html, body {
 .image {
 position: static;
 width: auto;
-
-
 }
-
+.kristin{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(http://link-to-your/image.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  margin-left:550px;
+}
 
 h1 {
 color: #34495e;
@@ -26,12 +35,12 @@ top: 60px;
 text-align: center;
 font: bold 150px/150px Pacifico, Sans-Serif;
 width: 1500px;
-color: #f1c40f;
+color: #2c3e50;
 }
 
 h1_2{
     position: absolute;
-top: 5800px;
+top: 5600px;
 text-align: center;
 font: bold 100px/100px Pacifico, Sans-Serif;
 width: 1500px;
@@ -40,7 +49,7 @@ color: white;
 
 h1_3{
     position: absolute;
-top: 6050px;
+top: 5900px;
 text-align: center;
 font: bold 31px/31px Pacifico, Sans-Serif;
 width: 1500px;
@@ -48,25 +57,26 @@ color: #f1c40f;
 }
 .email{
       position: absolute;
-top: 6100px;
+top: 5950px;
 margin-left: 525px;
 
 }
 .ebutton{
 position: absolute;
- margin-left: 360px; 
+ margin-left: 310px; 
  top: 0px;
+ z-index: 10;
+ }
 
-    
-}
+
 .social{
     position: absolute;
   margin-left: 20px; 
- top: 4600px;
+ top: 4980px;
 }
+
 .sharing{
-   
-float: right;
+  float: left;
 }
 
 
@@ -75,8 +85,9 @@ float: right;
    font-size: 25px;
    line-height: 50px;
    width:360px;
-   
+  
 }
+
 
 .work{
 	position: absolute;
