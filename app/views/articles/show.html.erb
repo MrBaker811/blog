@@ -3,6 +3,10 @@
   <div style="border-left:thin #95a5a6 outset; left:2px; height:750px;" />
 <%= image_tag @article.photo.url(:large), :class => "style_image_3" %>
 <div style="border-right:thin #95a5a6 inset; right:2px; height:750px;" />
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
+
  
  <div class="show">
   <p_3><%= @article.title %></p_3></div>
@@ -40,8 +44,8 @@
    <div class="aligncenter" style="width:985px;height:0;border-top:4px outset #7f8c8d;font-size:0;">-</div>
 <br>
   <div class="sharing">
+    <%= image_tag "facebook.png", :size => "50x50" %>
   <%= image_tag "twitter.png", :size => "50x50" %>
-<%= image_tag "facebook.png", :size => "50x50" %>
 <%= image_tag "instagram.png", :size => "50x50" %>
 <%= image_tag "youtube.png", :size => "50x50" %>
 </div>
