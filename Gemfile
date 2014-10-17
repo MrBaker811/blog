@@ -21,6 +21,8 @@ gem 'will_paginate-bootstrap'
 gem 'social-share-button', '~> 0.1.6'
 gem 'mailchimp-api', '~> 2.0.5'
 gem 'gibbon', '~> 1.1.3'
+gem 'aws-sdk', '~> 1.20.0'
+
 
 group :development, :test do
      gem 'sqlite3'
