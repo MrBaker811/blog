@@ -6,7 +6,7 @@ html, body {
 
 .image {
 position: static;
-width: 100%;
+max-width: 100%;
 }
 .kristin{
 
@@ -97,11 +97,11 @@ position: absolute;
 
 .frame{
 	position: absolute;
-	 height:2050px;
+	 height:2052px;
     line-height:200px;
     border-right:1px inset #7f8c8d;
-    margin-left: 1215px;
-    top: 2815px;
+    margin-left: 1226px;
+    top: 3090px;
 }
 
 .cop {
