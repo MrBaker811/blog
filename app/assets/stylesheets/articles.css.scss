@@ -3,7 +3,10 @@ html, body {
   overflow-x: hidden ;
 }
 
-
+.image{
+  max-width:100%;
+  
+}
 
 .kristin{
 
@@ -24,7 +27,14 @@ padding: 15px;
  
 }
 
-
+h1_1 {
+position: absolute;
+top: 60px;
+text-align: center;
+font: bold 150px/150px Pacifico, Sans-Serif;
+width: 1500px;
+color: #2c3e50;
+}
 
 h1_2{
     position: absolute;
