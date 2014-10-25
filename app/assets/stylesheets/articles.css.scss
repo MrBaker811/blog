@@ -12,16 +12,6 @@ html, body {
  position: static; 
  }
 
-.kristin{
-
-  width: 15%;
-  height: 15%;
-  
-  
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  margin-left:15%;
-  background-size: cover;
-}
 
 h1 {
 color: #34495e;
@@ -55,14 +45,13 @@ color: black;
 h1_3{
   
 text-align: center;
-font: bold 31px/31px Pacifico, Sans-Serif;
+font: bold 25px/25px Pacifico, Sans-Serif;
 width: 100%;
 color: #f1c40f;
 }
 .email{
-      position: absolute;
-top: 5300px;
-margin-left: 225px;
+      
+      margin-left: 35%;
 
 }
 .ebutton{
@@ -74,9 +63,9 @@ position: absolute;
 
 
 .social{
-    position: absolute;
+    bottom: 500px;
   margin-left: 5%; 
- top: 4500px;
+ 
 }
 
 .sharing{
