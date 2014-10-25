@@ -37,7 +37,23 @@
 #end
 
 
+yoyoyoyoyoy
+.work{
+	position: absolute;
+	 height: 246.5%;
+    line-height:200px;
+    border-left:1px outset #7f8c8d;
+    margin-left: 0px;
+}
 
+.frame{
+	position: absolute;
+	 height:2137px;
+    line-height:200px;
+    border-right:1px inset #7f8c8d;
+    margin-left: 1279px;
+    top: 2703px;
+}
 
 
     #scrolling share buttons

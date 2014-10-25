@@ -39,7 +39,7 @@ text-align: center;
 font: bold 150px/150px Pacifico, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #2c3e50;
+color:  #1abc9c;
 
 }
 
@@ -94,22 +94,6 @@ position: absolute;
 }
 
 
-.work{
-	position: absolute;
-	 height:2070px;
-    line-height:200px;
-    border-left:1px outset #7f8c8d;
-    margin-left: 0px;
-}
-
-.frame{
-	position: absolute;
-	 height:2052px;
-    line-height:200px;
-    border-right:1px inset #7f8c8d;
-    margin-left: 1226px;
-    top: 3125px;
-}
 
 .cop {
     
@@ -119,7 +103,7 @@ position: absolute;
 }
 
 .cop:before {
-    border-top: 2px solid #1abc9c;
+    border-top: 2px solid #FFC0CB;
     content:"";
     margin: 0 auto; /* this centers the line to the full width specified */
     position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
