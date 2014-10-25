@@ -4,18 +4,9 @@ html, body {
 }
 
 .image{
-  position: relative;
+ 
 }
 
-h1_1 {
-position: absolute;
-top: 60px;
-text-align: center;
-font: bold 150px/150px Pacifico, Sans-Serif;
-width: 1500px;
-color: #2c3e50;
-
-}
 .kristin{
 
   width: 300px;
@@ -35,28 +26,36 @@ padding: 15px;
  
 }
 
+h1_1 {
+position: absolute;
+top: 60px;
+text-align: center;
+font: bold 150px/150px Pacifico, Sans-Serif;
+width: 100%;
+color: #2c3e50;
 
+}
 
 h1_2{
     position: absolute;
-top: 5900px;
+top: 5500px;
 text-align: center;
 font: bold 100px/100px Pacifico, Sans-Serif;
-width: 1500px;
+width: 100%;
 color: white;
 }
 
 h1_3{
     position: absolute;
-top: 6200px;
+top: 5900px;
 text-align: center;
 font: bold 31px/31px Pacifico, Sans-Serif;
-width: 1500px;
+width: 100%;
 color: #f1c40f;
 }
 .email{
       position: absolute;
-top: 6300px;
+top: 6000px;
 margin-left: 525px;
 
 }
@@ -83,7 +82,7 @@ position: absolute;
    height: 50px;
    font-size: 25px;
    line-height: 50px;
-   width:360px;
+   width:100%;
   
 }
 
