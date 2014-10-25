@@ -9,8 +9,7 @@ html, body {
 }
 
  .flick{
-position: relative; 
-   width: 100%; /* for IE 6 */
+ position: static; 
  }
 
 .kristin{
@@ -34,7 +33,7 @@ padding: 15px;
 
 h1_1 {
 position: absolute;
-top: 10px;
+top: 0px;
 text-align: center;
 font: bold 150px/150px Pacifico, Sans-Serif;
 width: 100%;
@@ -45,16 +44,16 @@ color:  #1abc9c;
 
 h1_2{
     position: absolute;
-top: 5700px;
+top: 5500px;
 text-align: center;
-font: bold 100px/100px Pacifico, Sans-Serif;
+font: bold 50px/50px Pacifico, Sans-Serif;
 width: 100%;
-color: black;
+color: white;
 }
 
 h1_3{
     position: absolute;
-top: 5900px;
+top: 5400px;
 text-align: center;
 font: bold 31px/31px Pacifico, Sans-Serif;
 width: 100%;
@@ -62,8 +61,8 @@ color: #f1c40f;
 }
 .email{
       position: absolute;
-top: 6000px;
-margin-left: 525px;
+top: 5300px;
+margin-left: 225px;
 
 }
 .ebutton{
@@ -76,8 +75,8 @@ position: absolute;
 
 .social{
     position: absolute;
-  margin-left: 15%; 
- top: 4800px;
+  margin-left: 55%; 
+ top: 4500px;
 }
 
 .sharing{
@@ -95,22 +94,6 @@ position: absolute;
 
 
 
-.cop {
-    
-    margin-top: 18px;
-    position: relative;
-    
-}
-
-.cop:before {
-    border-top: 2px solid #FFC0CB;
-    content:"";
-    margin: 0 auto; /* this centers the line to the full width specified */
-    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 2030px; left: 0; right: 0; bottom: 0;
-    width: 100%;
-    z-index: 5;
-}
 
 .press{
 	  margin-left: 10px;

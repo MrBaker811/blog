@@ -37,7 +37,7 @@
 #end
 
 
-yoyoyoyoyoy
+horizontal and vertical lines
 .work{
 	position: absolute;
 	 height: 246.5%;
@@ -55,6 +55,24 @@ yoyoyoyoyoy
     top: 2703px;
 }
 
+
+.cop {
+    
+    margin-top: 18px;
+    position: relative;
+    
+}
+
+.cop:before {
+    border-top: 2px solid #FFC0CB;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 2030px; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+end
 
     #scrolling share buttons
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
