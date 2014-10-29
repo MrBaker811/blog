@@ -1,5 +1,5 @@
 @media only screen and (max-width: 650px) {
-                    h1_1 {position: absolute;
+	  h1_1 {position: absolute;
 top: 15px;
 text-align: center;
 font: bold 40px/40px Rock Salt, Sans-Serif;
@@ -7,30 +7,36 @@ width: 100%;
  height: 100%;
 color:  #f1c40f;
         }
+      }
 
 
-p_5{
+@media only screen and (max-width: 650px) {
+	p_5{
  position: absolute;
 top: 90%;
 text-align: center;
-font: bold 15px/15px Rock Salt, Sans-Serif;
+font: bold 13px/13px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
 color: red;
-margin-left: 30%; 
+margin-left: 20%; 
 }
-     }
-
-     @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */h1_1 {position: absolute;
-top: 15px;
-text-align: center;
-font: bold 45px/45px Rock Salt, Sans-Serif;
-width: 100%;
- height: 100%;
-color:  #f1c40f;
-        }
 }
 
+
+
+
+@media only screen and (max-width: 650px) {
+.ebutton{
+position: absolute;
+ margin-left: 50px; 
+ top: 0px;
+ z-index: 10;
+ }
+		 }
+
+ @media only screen and (max-width: 650px) {
+.mystyle input[type="text"] {
+   
+}
+}
