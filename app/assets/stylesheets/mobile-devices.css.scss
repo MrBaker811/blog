@@ -9,7 +9,7 @@ font-size: 32px;
 
 	p_5{
 font: bold 13px/13px Rock Salt, Sans-Serif;
-margin-left: 20%; 
+margin-left: 18%; 
 }
 
 h1_2{
@@ -22,13 +22,13 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 
 .email{
       
-      margin-left: 3%;
+      margin-left: 10%;
 
 }
 
 .mystyle input[type="text"] {
- height: 60px;
-   font-size: 13px;
+ height: 52.5px;
+   font-size: 9px;
    line-height: 50px;
    width:100%;
   
@@ -36,14 +36,17 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 
 .ebutton{
 
- margin-left: 75%; 
+ margin-left: 100%; 
+ 
+ top: 0px;
+ z-index: 10;
  
  }
 
 .btn {
     
     padding: 4.5px 0px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: normal;
   
             border-radius: 0px;
