@@ -43,7 +43,7 @@
 
 	<div class="container">
 			<% if user_signed_in? %>
-				<%= link_to 'New Blog', new_article_path, class: "btn btn-primary btn-lg" %>
+				<%= link_to 'New Blog', new_article_path, class: "btn btn-success btn-lg" %>
 			<% end %>
 
 
@@ -109,6 +109,14 @@ method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </div>
 </div>
 
+<h1_4>Follow Me on ...</h1_4>
+
+<div class="social">
+	<%= image_tag "facebook.png", :size => "70x70" %>
+ <%= image_tag "twitter.png", :size => "70x70" %>
+<%= image_tag "instagram.png", :size => "70x70" %>
+<%= image_tag "youtube.png", :size => "70x70" %>
+</div>
 
  <div id="Authors"></div>
 <br>
@@ -121,12 +129,7 @@ method: :delete, data: { confirm: 'Are you sure?' } %></td>
 				<center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
 </div>
 </div>
-<div class="social">
-	<%= image_tag "facebook.png", :size => "75x75" %>
- <%= image_tag "twitter.png", :size => "75x75" %>
-<%= image_tag "instagram.png", :size => "75x75" %>
-<%= image_tag "youtube.png", :size => "75x75" %>
-</div>
+
   </br>
 
 

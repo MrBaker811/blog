@@ -50,27 +50,19 @@ font: bold 25px/25px Rock Salt, Sans-Serif;
 width: 100%;
 color: #1abc9c;
 }
+
+h1_4{
+  
+text-align: center;
+font: bold 30px/30px Rock Salt, Sans-Serif;
+width: 100%;
+margin-left: 6%;
+color: #cbd0d3;
+}
 .email{
       
       margin-left: 35%;
 
-}
-.ebutton{
-position: absolute;
- margin-left: 310px; 
- top: 0px;
- z-index: 10;
- }
-
-
-.social{
-    
-  margin-left: 5%; 
- 
-}
-
-.sharing{
-  float: left;
 }
 
 
@@ -81,6 +73,26 @@ position: absolute;
    width:100%;
   
 }
+
+.ebutton{
+position: absolute;
+ margin-left: 310px; 
+ top: 0px;
+ z-index: 10;
+ }
+
+
+.social{
+    
+  margin-left: 5%;
+ 
+ 
+}
+
+.sharing{
+  float: left;
+}
+
 
 
 
