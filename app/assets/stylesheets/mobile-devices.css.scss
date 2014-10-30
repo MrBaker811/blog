@@ -1,4 +1,8 @@
-@media only screen and (max-width: 650px) {
+
+
+
+@media only screen and (max-width: 524px) 
+ {
 	  h1_1{
 	font: bold 40px/40px Rock Salt, Sans-Serif;
 }
@@ -11,9 +15,8 @@ font-size: 32px;
 font: bold 13px/13px Rock Salt, Sans-Serif;
 margin-left: 18%; 
 }
-
 h1_2{
-   font: bold 40px/40px Rock Salt, Sans-Serif;
+   font: bold 36px/36px Rock Salt, Sans-Serif;
  }
 
  h1_3{
@@ -27,7 +30,7 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 }
 
 .mystyle input[type="text"] {
- height: 52px;
+ height: 51px;
    font-size: 9px;
    line-height: 50px;
    width:100%;
@@ -36,7 +39,7 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 
 .ebutton{
 
- margin-left: 100%; 
+ margin-left: 95%; 
  
  top: 0px;
  z-index: 10;
@@ -53,14 +56,36 @@ font: bold 15px/15px Rock Salt, Sans-Serif
   
 }
 
+}
+
+
+@media only screen and (min-width: 525px) 
+and (max-width : 768px)  
+ {
+	  h1_1{
+	font: bold 65px/65px Rock Salt, Sans-Serif;
+	color: #9b59b6;
+}
+	p_5{
+font: bold 17px/17px Rock Salt, Sans-Serif;
+margin-left: 24%; 
+}
+}
 
 
 
 
 
-      }
+@media only screen and (min-width: 769px) 
+and (max-width : 1260px)   
+ {
+	  h1_1{
+	font: bold 105px/105px Rock Salt, Sans-Serif;
+	color: white;
+}
 
-
-
-
-
+	p_5{
+font: bold 20px/20px Rock Salt, Sans-Serif;
+margin-left: 30%; 
+}
+}
