@@ -1,92 +1,81 @@
+<div id="Top"></div>
+
+
 
 <div class="aligncenter" style="width:100%;height:0;border-top:4px solid #95a5a6;font-size:0;">-</div>
-
 <div class= "image">
-			<%= image_tag "3 slaves.jpg",  :class => "img-responsive" %>
-
+<%= image_tag "3 slaves.jpg", :class => "img-responsive" %>
 <h1_1>
-		Crowns
-		<br>Over
-		<br>Cotton</h1_1>
+Crowns
+<br>Over
+<br>Cotton</h1_1>
 <p_5> For COLORful Girls!</p_5>
 </div>
 <div style="width:100%;height:0;border-top:4px solid #95a5a6;font-size:0;"></div>
-	<div class="quote" data-respond="start: 100px; end: 900px; interval: 50px;">
-		<br>
-			<br>
-			<br>
-
-		<h1_5>Videos</h1_5> <span class=" glyphicon glyphicon-facetime-video"></span>
-<div style="width:100%;height:0;border-top:1px solid #95a5a6;font-size:0;"></div>
-		
-		
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
-
-		<div class="cop"></div>
-			
-<div class="frame"></div>
-
-	
- <div id="Blog"></div>
-	
-			<br>
-			<br>
-			<br>
-<div class="container">
-	<div class="aligncenter" style="width:95%;height:0;border-top:2px dotted #95a5a6;font-size:0;">-</div>
-	<div class="work"></div>
-				<center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
-				<center><div class="aligncenter" style="width:10%;height:0;border-top:2px solid #1abc9c;font-size:0;"></div></center>
-				<center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
-</div>
-
-<center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid #7f8c8d;font-size:0;">-</div></center>
-
+<div class="quote" data-respond="start: 100px; end: 900px; interval: 50px;">
+<br>
 <br>
 
 
-	<div class="container">
-			<% if user_signed_in? %>
-				<%= link_to 'New Blog', new_article_path, class: "btn btn-success btn-lg" %>
-			<% end %>
+<br>
+	<h1_5>Videos</h1_5><span class="glyphicon glyphicon-facetime-video"></span>
+<div style="width:100%;height:0;border-top:1px solid #95a5a6;font-size:0;"></div>
+<br>
+
+<div class="container">
+<% if user_signed_in? %>
+<%= link_to 'New video', new_wideo_path, class: "btn btn-success btn-lg" %>
+<% end %>
 
 
-		
-					<% @articles.each do |article| %>
+
+
+<center><iframe src="//fast.wistia.net/embed/iframe/d08m89hilv" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="800" height="451"></iframe></center>
+
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
+<div class="cop"></div>
+<div class="frame"></div>
+<div id="Blog"></div>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="aligncenter" style="width:95%;height:0;border-top:2px dotted #95a5a6;font-size:0;">-</div>
+<div class="work"></div>
+<center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
+<center><div class="aligncenter" style="width:10%;height:0;border-top:2px solid #1abc9c;font-size:0;"></div></center>
+<center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
+</div>
+<center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid #7f8c8d;font-size:0;">-</div></center>
+<br>
+<div class="container">
+<% if user_signed_in? %>
+<%= link_to 'New Blog', new_article_path, class: "btn btn-success btn-lg" %>
+<% end %>
+<% @articles.each do |article| %>
 </div>
 <div class="container">
-		<div class="row">
-				
-				<center><p_3><%= article.title %></p_3></center>
+<div class="row">
+<center><p_3><%= article.title %></p_3></center>
 <center><div class="aligncenter" style="width:65%;height:0;border-top:1px outset #7f8c8d;font-size:0;"></div></center>
 <center><p_6><span class="glyphicon glyphicon-pencil"></span> on
 <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
 <%= article.created_at.mday %>
 <%= article.created_at.year %></strong></p_6></center>
-
 <br>
 </div>
 </div>
 
 <center><%= image_tag article.photo.url(:medium), :class => "style_image", :class => "img-responsive" %></center>
 
-
-
-
 </div>
 </div>
-
-
-		
 <br>
 <center><p_1><%= link_to "Read On...", article %></p_1></center>
-
 <center><div class="aligncenter" style="width:65%;height:0;border-top:2px solid #7f8c8d;font-size:0;">-</div></center>
-
-
-
-
 <br>
 <div class="extra">
 <center>
@@ -95,99 +84,103 @@
 <td><%= link_to 'Delete', article_path(article),
 method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </center>
-
-
-
 <% end %>
 </div>
 </div>
 </div>
-
-
 <% end %>
-
-
-
 <div class="container">
 <div class="pages">
 <%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
 </div>
 </div>
-
 <h1_4>Follow Me on...</h1_4>
-
 <div class="social">
-	<%= image_tag "facebook.png", :size => "70x70" %>
- <%= image_tag "twitter.png", :size => "70x70" %>
+
+<%= link_to "http://www.facebook.com/" do %> 
+<%= image_tag "facebook.png", :size => "70x70" %>
+<% end %>
+
+<%= link_to "http://www.twitter.com/" do %> 
+<%= image_tag "twitter.png", :size => "70x70" %>
+<% end %>
+
+<%= link_to "http://www.instagram.com/" do %> 
 <%= image_tag "instagram.png", :size => "70x70" %>
+<% end %>
+
+<%= link_to "http://www.youtube.com/" do %> 
 <%= image_tag "youtube.png", :size => "70x70" %>
+<% end %>
+
 </div>
-
- <div id="Authors"></div>
+<div id="About"></div>
 <br>
 <br>
 <br>
-
-
-				
-
 </div>
 <div class="jumbotron">
-	<center><%= image_tag "crown31.png", :width => "5%", :class => "img-responsive" %></center>
-				
-	<h1_6><center>Crowns Over Cotton is...</center></h1_6>	</br>
-	<div class="container">
+<center><%= image_tag "crown31.png", :width => "5%", :class => "img-responsive" %></center>
+<h1_6><center>Crowns Over Cotton is...</center></h1_6> </br>
+<div class="container">
 <center><h1_5>A young innovative online magazine celebrating the beautiful complexities of COLORful girls.<br><br>
-	<center><div class="aligncenter" style="width:65%;height:0;border-top:2px solid white;font-size:0;">-</div></center>
-	<br>
+<center><div class="aligncenter" style="width:65%;height:0;border-top:2px solid white;font-size:0;">-</div></center>
+<br>
 Crowns Over Cotton covers the news, entertainment, beauty, and health that matter to you, with the vibrancy and color that You deserve.</h1_5></center></div>
-				<center><%= image_tag "cloud294.png", :width => "5%", :class => "img-responsive" %></center>
+<center><%= image_tag "cloud294.png", :width => "5%", :class => "img-responsive" %></center>
 </div>
- 
+<center><h1_2>Can I get Your Email <br>digits?</h1_2></center>
+<br>
+<br>
+<center><h1_3> Slide me some info and I'll hit you back with some cool stuff...</h1_3></center>
+<br>
+
+<!-- Begin MailChimp Signup Form -->
+<center><link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{font:20px Rock Salt, Sans-Serif; width:800px}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+</style>
+<div id="mc_embed_signup">
+<form action="//herokuapp.us9.list-manage.com/subscribe/post?u=ef6367d657c76b4c9ba32bac4&amp;id=d677110f0c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    	
+    
+
+<div class="form-group">
 
 
-    <center><h1_2>Can I get Your Email <br>digits?</h1_2></center>
-    <br>
-    <br>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter Your Email" required>
 
-   <center><h1_3> Slide me some info and I'll hit you back with some cool stuff...</h1_3></center>
-   <br>
-<div class="email">
-	<div class="mystyle">
-  <div class="form-group">
-    <div class="input-group">
-    	<input class="form-control" type="text" placeholder="Enter Your Email">
-    	 
-  		<div class="ebutton">
 
-    <button type="submit" class="btn btn-success btn-lg">Sign me up</button></div>
+<div class="ebutton">
+<button type="submit" id="mc-embedded-subscribe"  class="btn btn-success btn-lg">Sign me up</button></div>
 </div>
 </div>
 </div>
 </div>
+
+	
+    </div>
+</form>
+</div>
+</center>
+
+<!--End mc_embed_signup-->
 
 <br>
 <br>
-
-
 <div class="row">
-	 
-		<%= image_tag "DeathtoStock_Simplify10.jpg", :size => "300x300" %>
-		<%= image_tag "DeathtoStock_Simplify4.jpg", :size => "300x300" %>
-			<%= image_tag "DeathtoStock_Simplify8.jpg", :size => "300x300" %>
-			<%= image_tag "3 slaves.jpg", :size => "300x300" %>
-			<%= image_tag "slaves-picking-cotton.png", :size => "230x300" %>
-			  </div>
-
+<%= image_tag "DeathtoStock_Simplify10.jpg", :size => "300x300" %>
+<%= image_tag "DeathtoStock_Simplify4.jpg", :size => "300x300" %>
+<%= image_tag "DeathtoStock_Simplify8.jpg", :size => "300x300" %>
+<%= image_tag "3 slaves.jpg", :size => "300x300" %>
+<%= image_tag "slaves-picking-cotton.png", :size => "230x300" %>
+</div>
 <br>
-			  <div class="aligncenter" style="width:1432px;height:0;border-top:2px solid #1abc9c;font-size:0;">-</div>
-			<br>
-
-
-
-
+<div class="aligncenter" style="width:1432px;height:0;border-top:2px solid #1abc9c;font-size:0;">-</div>
+<br>
 <center><em><%= link_to 'ADMIN', new_user_session_path %></em></center>
 
-
-
-<br>

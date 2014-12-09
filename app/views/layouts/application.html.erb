@@ -8,17 +8,22 @@
    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-
-
 <%= auto_discovery_link_tag(:atom, articles_path(:atom)) %>
+
+
+
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
-
+ 
+  <script src="https://www.google.com/jsapi"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <%= render 'layouts/header' %>
 <body>
+
+ 
 
 <% flash.each do |name, msg| %>
      <%= content_tag(:div, msg, class: "alert alert-warning") %>

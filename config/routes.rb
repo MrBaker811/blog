@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :pins
 
+  resources :wideos, only: [:index, :new, :create, :destroy]
+
+
     resources :articles
     root 'articles#index'
   # The priority is based upon order of creation: first created -> highest priority.

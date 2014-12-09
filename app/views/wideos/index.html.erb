@@ -1,0 +1,52 @@
+<div class="jumbotron">
+  <div class="container">
+    <center><h1>CROWNS OVER COTTON <br></br>T.V.</h1></center>
+    
+    <p>
+       <% if user_signed_in? %>
+      <%= link_to 'Add video now!', new_wideo_path, class: 'btn btn-primary btn-lg' %>
+        <% end %>
+    </p>
+  </div>
+</div>
+
+ 
+<% if @wideos.any? %>
+  <div class="container">
+    <h1>Latest videos</h1>
+ 
+    <div id="player-wrapper"></div>
+
+ 
+    <% @wideos.in_groups_of(3) do |group| %>
+      <div class="row">
+        <% group.each do |wideo| %>
+          <% if wideo %>
+            <div class="col-md-4">
+              <div class="yt_video thumbnail">
+                <%= image_tag "https://img.youtube.com/vi/#{wideo.uid}/mqdefault.jpg", alt: wideo.title, class: 'yt_preview img-rounded', :"data-uid" => wideo.uid %> 
+
+
+             
+                <div class="caption">
+                  <h5><%= wideo.title %></h5>
+                  <p>Author: <b><%= wideo.author %></b></p>
+                  <p>Duration: <b><%= wideo.duration %></b></p>
+                  <p>
+                    <span class="glyphicon glyphicon glyphicon-thumbs-up"></span> <%= wideo.likes %>
+                    <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= wideo.dislikes %>
+                    <% if user_signed_in? %>
+
+                    <td><%= link_to 'Delete', wideo_path(wideo),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    <% end %>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
