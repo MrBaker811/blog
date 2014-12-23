@@ -29,9 +29,7 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 
 }
 
-.style [type="text/css"]
-{font:9px Rock Salt, Sans-Serif; width:350px
-}
+
 
 .mystyle input[type="text"] {
  height: 51px;
@@ -39,6 +37,10 @@ font: bold 15px/15px Rock Salt, Sans-Serif
    line-height: 50px;
    width:100%;
   
+}
+
+.rejust{
+  margin-left: 13%;
 }
 
 .ebutton{
@@ -104,10 +106,9 @@ font: bold 15px/15px Rock Salt, Sans-Serif
       margin-left: 21%;
 
 }
-.style [type="text/css"]
-{font:13px Rock Salt, Sans-Serif; width:500px
+.rejust{
+  margin-left: 20%;
 }
-
 .mystyle input[type="text"] {
  height:60px;
    font-size: 15px;
