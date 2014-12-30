@@ -1,5 +1,5 @@
 <div class= "container">
-   <div style="border-left:thin #95a5a6 outset; left:2px; height:810px;" />
+   <div style="border-left: #95a5a6 outset; left:8px; height:610px;" />
 </br>
  
    <div class="show">
@@ -7,12 +7,12 @@
  
 
    <center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
-
-   <center><div class="aligncenter" style="width:880px;height:0;border-top:1px solid #1abc9c;font-size:0;">-</div></center>
-  <center><p_3><%= @article.title %></p_3></div></center>
-  <center><div class="aligncenter" style="width:880px;height:0;border-top:1px solid #1abc9c;font-size:0;">-</div></center>
+<center><p_3><%= @article.title %></p_3></div></center>
+  <div class="aligncenter" style="width:1000px;height:0;border-top:1px outset #1abc9c;font-size:0;">-</div>
+ 
 
 <center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
+
 
 
 
@@ -23,36 +23,31 @@
 
 
 
-<div class="aligncenter" style="width:1000px;height:0;border-top:1px solid gray;font-size:0;">-</div>
+<center><div class="aligncenter" style="width:800px;height:0;border-top:2px outset #95a5a6;font-size:0;">-</div></center>
 
 
 
 
-<div style="border-right:thin #95a5a6 inset; right:2px; height:360px;" />
+
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
 
  <br>
 
-  
+ 
        
   
-   
- <center><p_2><%= @article.text %></p_2></center>
-
+   <div style="border-right:#1abc9c inset; right:2px; height:360px;" />
+ <p_2><%= simple_format @article.text %></p_2>
 
 
 
   
-<div class="aligncenter" style="width:1000px;height:0;border-top:1px outset #7f8c8d;font-size:0;">-</div>
+
    </br>
  
-
- <p>
-
- 
-   <div class="aligncenter" style="width:985px;height:0;border-top:2px outset #7f8c8d;font-size:0;">-</div>
+   <div class="aligncenter" style="width:1135px;height:0;border-top:2px outset #95a5a6;font-size:0;">-</div>
 <br>
   <div class="sharing">
     <%= image_tag "facebook.png", :size => "50x50" %>
