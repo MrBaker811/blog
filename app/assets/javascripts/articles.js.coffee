@@ -20,6 +20,8 @@ $(document).ready ->
       scrollTop: $target.offset().top
     , 900, "swing", ->
       window.location.hash = target
+
+      
       return
 
     return
@@ -30,6 +32,10 @@ $(document).ready ->
 
 
 
+$ ->
+  navMain = $(".navbar-collapse")
+  navMain.on "click", "a", null, ->
+    navMain.collapse "hide"
+    return
 
-
-
+  return

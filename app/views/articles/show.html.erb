@@ -6,12 +6,11 @@
  
  
 
-   <center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
+  
 <center><p_3><%= @article.title %></p_3></div></center>
- <center> <div class="aligncenter" style="width:60%;height:0;border-top:1px solid #1abc9c;font-size:0;">-</div></center>
- 
-
-<center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
+ <center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %>
+ <div class="aligncenter" style="width:60%;height:0;border-top:1px solid #1abc9c;font-size:0;">-</div>
+ <%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
 
 
 
@@ -19,6 +18,8 @@
 
 
 <center><%= image_tag @article.photo.url(:large), :class => "img-responsive" %></center>
+
+
 </br>
 
 
@@ -38,7 +39,7 @@
  
        
   
-   <div style="border-right:#1abc9c inset; right:2px; height:60%;" />
+   <div style="border-right:#1abc9c inset; right:2px; height:780px;" />
  <p_2><%= simple_format @article.text %></p_2>
 
 
@@ -47,7 +48,7 @@
 
    </br>
  
-   <div class="aligncenter" style="width:1135px;height:0;border-top:2px outset #95a5a6;font-size:0;">-</div>
+   <div class="aligncenter" style="width:100%;height:0;border-top:2px outset #95a5a6;font-size:0;">-</div>
 <br>
   <div class="sharing">
     <%= image_tag "facebook.png", :size => "50x50" %>
