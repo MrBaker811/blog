@@ -43,7 +43,7 @@ Crowns
 <div class="aligncenter" style="width:95%;height:0;border-top:2px dotted black;font-size:0;">-</div>
 <div class="work"></div>
 <center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
-<center><div class="aligncenter" style="width:10%;height:0;border-top:2px solid #27ae60;font-size:0;"></div></center>
+<center><div class="aligncenter" style="width:10%;height:0;border-top:1px solid #e74c3c;font-size:0;"></div></center>
 <center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
 </div>
 <center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid black;font-size:0;">-</div></center>
@@ -66,13 +66,14 @@ Crowns
 </div>
 </div>
 
-<center><%= image_tag article.photo.url(:medium), :class => "style_image", :class => "img-responsive" %></center>
+ 
+<center><%= link_to (image_tag article.photo.url(:medium)), article, :class => "style_image", :class => "img-responsive" %></center>
 
 </div>
 </div>
 <br>
-<center><p_1><%= link_to "Read On...", article %></p_1></center>
-<center><div class="aligncenter" style="width:65%;height:0;border-top:1px solid black;font-size:0;">-</div></center>
+
+
 <br>
 <div class="extra">
 <center>
@@ -169,6 +170,16 @@ Crowns Over Cotton covers the news, entertainment, beauty, and health that matte
 
 
 <!--End mc_embed_signup-->
+<div class='wrapper'>  
+ 
+    <div class='description'>  
+        <!-- description content -->  
+        <p class='description_content'>The pack, the basic...</p>  
+        <!-- end description content -->  
+    </div>  
+    <!-- end description div -->  
+</div>  
+<%= image_tag "IMG_1947.jpg", :class => "img-responsive" %>
 
 
 
