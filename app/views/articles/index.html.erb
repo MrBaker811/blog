@@ -14,7 +14,7 @@ Crowns
 <br>
 
 
-<br>
+
 	<h1_5>Videos</h1_5><span class="glyphicon glyphicon-facetime-video"></span>
 <div style="width:100%;height:0;border-top:1px solid #95a5a6;font-size:0;"></div>
 <br>
@@ -40,13 +40,13 @@ Crowns
 <br>
 <br>
 <div class="container">
-<div class="aligncenter" style="width:95%;height:0;border-top:2px dotted black;font-size:0;">-</div>
+<div class="aligncenter" style="width:95%;height:0;border-top:2px dotted #95a5a6;font-size:0;">-</div>
 <div class="work"></div>
 <center><%= image_tag "crown31.png", :width => "7%", :class => "img-responsive" %></center>
 <center><div class="aligncenter" style="width:10%;height:0;border-top:1px solid #e74c3c;font-size:0;"></div></center>
 <center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
 </div>
-<center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid black;font-size:0;">-</div></center>
+<center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid #95a5a6;font-size:0;">-</div></center>
 <br>
 <div class="container">
 <% if user_signed_in? %>
@@ -67,8 +67,8 @@ Crowns
 </div>
 
  
-<center><%= link_to (image_tag article.photo.url(:medium)), article, :class => "style_image", :class => "img-responsive" %></center>
-
+<center><%=  image_tag article.photo.url(:medium), :class => "img-responsive" %></center>
+<center><p_1><%= link_to "Read On...", article %></p_1></center>
 </div>
 </div>
 <br>
@@ -179,7 +179,7 @@ Crowns Over Cotton covers the news, entertainment, beauty, and health that matte
     </div>  
     <!-- end description div -->  
 </div>  
-<%= image_tag "shire.jpg", :class => "img-responsive" %>
+<%= link_to image_tag "shire.jpg", :class => "img-responsive" %>
 
 
 
