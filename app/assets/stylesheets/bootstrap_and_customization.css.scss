@@ -1,17 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Shadows+Into+Light|Rock+Salt|Kotta+One);
 
 
-$jumbotron-bg: #e74c3c;
+$jumbotron-bg: #ecf0f1;
 $body-bg: white;
 $font-family-sans-serif:                'Rock Salt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-default-bg: #27ae60;
+$navbar-default-bg: #8e44ad;
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: #7f8c8d;
 $brand-primary: #bdc3c7;
 $brand-success: #e74c3c;
 $brand-warning: #f1c40f;
 $thumbnail-bg: #e74c3c;
-$panel-footer-bg: #1abc9c;
+$panel-footer-bg: #e74c3c;
 
 
 
@@ -28,8 +28,10 @@ $input-border: #7f8c8d;
      
      font: bold 15px/15px Rock Salt, Sans-Serif;
      
-     
+      
 }
 
 
-
+.navbar{
+	opacity:0.7; 
+}

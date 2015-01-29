@@ -3,6 +3,11 @@ html, body {
   overflow-x: hidden ;
 }
 
+
+.piano{
+    margin-left: 91.7%;
+}
+
 .image{
   position: relative; 
    width: 100%; /* for IE 6 */
@@ -277,4 +282,8 @@ background-image: border-left;
         padding:10px;  
         margin:0px;  
     }  
+
+.uptown{
+ text-decoration: underline;
+}
 

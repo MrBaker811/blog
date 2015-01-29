@@ -39,3 +39,11 @@ $ ->
     return
 
   return
+
+window.addEventListener "scroll", (->
+  if window.scrollY > 600
+    $(".navbar").fadeIn()
+  else
+    $(".navbar").fadeOut()
+  return
+), false
