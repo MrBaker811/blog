@@ -41,7 +41,7 @@ $ ->
   return
 
 window.addEventListener "scroll", (->
-  if window.scrollY > 500
+  if window.scrollY > 400
     $(".navbar").fadeIn()
   else
     $(".navbar").fadeOut()
