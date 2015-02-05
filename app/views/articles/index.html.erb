@@ -48,6 +48,7 @@ Crowns
 </div>
 <center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid #95a5a6;font-size:0;">-</div></center>
 <br>
+<br>
 <div class="container">
 <% if user_signed_in? %>
 <%= link_to 'New Blog', new_article_path, class: "btn btn-success btn-lg" %>
@@ -56,6 +57,7 @@ Crowns
 </div>
 <div class="container">
 <div class="row">
+
 <center><p_3><%= article.title %></p_3></center>
 
 <center><p_6><span class="glyphicon glyphicon-pencil"></span> on
@@ -66,9 +68,12 @@ Crowns
 </div>
 </div>
 
-<div class="genius">
-<center><%= link_to image_tag(article.photo.url(:medium)), article, :class => "img-responsive" %></center>
-</div>
+
+
+
+  <%= link_to article do %> 
+<center><%= image_tag article.photo.url(:medium), :class => "img-responsive" %></center>
+<% end %>
 <center><p_1><%= link_to "Read On...", article %></p_1></center>
 </div>
 </div>
