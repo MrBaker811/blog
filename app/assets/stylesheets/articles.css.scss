@@ -70,7 +70,7 @@ text-align: center;
 font: bold 30px/30px Rock Salt;
 width: 100%;
 margin-left: 6%;
-color: black;
+color: #7f8c8d;
 }
 
 h1_6{
@@ -79,7 +79,7 @@ text-align: center;
 font: bold 47px/47px Rock Salt, Sans-Serif;
 width: 100%;
 margin-left: 6%;
-color: white;
+color: #1abc9c;
 }
 
 
@@ -171,9 +171,34 @@ padding-right: 50px;
 
 p_3 {
 font-family: Rock Salt, Sans-Serif;
+font-size: 500%;
+color: red;
+position: absolute;
+ z-index:100;
+margin-left: 75%; 
+ 
+ font-weight:bold;
+
+}
+
+p_10{
+  font-family: Rock Salt, Sans-Serif;
+font-size: 100%;
+color: red;
+position: absolute;
+ z-index:100;
+margin-left: 23.9%; 
+ 
+ font-weight:bold;
+
+}
+.hovers{
+  position: relative;
+}
+
+p_9{ont-family: Rock Salt, Sans-Serif;
 font-size: 52px;
 color: black;
-
 
 }
 

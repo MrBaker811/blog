@@ -1,6 +1,15 @@
+<br>
+<%= link_to root_path do %> 
+<center><%= image_tag "crown31.png", :width => "5%", :class => "img-responsive" %></center>
+<center><div class="aligncenter" style="width:8%;height:0;border-top:1px solid #8e44ad;font-size:0;"></div></center>
+<center><%= image_tag "cloud294.png", :width => "5%", :class => "img-responsive" %></center>
+</div>
+<% end %>
 
-  <div class="container">
-    <%= link_to "Home", root_path,  class: "btn btn-success btn-lg" %>
+
+
+  
+  
     
     <p>
        <% if user_signed_in? %>
@@ -13,7 +22,7 @@
  
 <% if @wideos.any? %>
   <div class="container">
-    <h1>Latest videos</h1>
+<h1>Latest videos</h1>
  
     <div id="player-wrapper"></div>
 

@@ -47,7 +47,7 @@ Crowns
 <center><div class="aligncenter" style="width:10%;height:0;border-top:1px solid #8e44ad;font-size:0;"></div></center>
 <center><%= image_tag "cloud294.png", :width => "7%", :class => "img-responsive" %></center>
 </div>
-<center><div class="aligncenter" style="width:52%;height:0;border-top:1px solid #95a5a6;font-size:0;">-</div></center></div>
+</div>
 
 <div class="container">
 <% if user_signed_in? %>
@@ -55,28 +55,35 @@ Crowns
 <% end %>
 <% @articles.each do |article| %>
 </div>
-<div class="container">
-<div class="row">
 
-<center><p_3><%= article.title %></p_3></center>
 
-<center><p_6><span class="glyphicon glyphicon-pencil"></span> on
-<strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
-<%= article.created_at.mday %>
-<%= article.created_at.year %></strong></p_6></center>
+
+
+
+
 <br>
-</div>
-</div>
+
 </div>
 
-
+<div class="hovers">
 
   <%= link_to article do %> 
+  
+  <p_10><span class="glyphicon glyphicon-pencil"></span> on
+<strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
+<%= article.created_at.mday %>
+<%= article.created_at.year %></strong></p_10></div>
+
+
+<div class="row">
+    <div class="col-md-8">
+<p_3><%= article.title %></p_3></div></div>
 <center><%= image_tag article.photo.url(:medium), :class => "img-responsive" %></center>
 <% end %>
 
 </div>
 </div>
+</div.
 <br>
 
 

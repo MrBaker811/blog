@@ -41,12 +41,15 @@ $ ->
   return
 
 
-$(document).on 'scroll', (e) ->
-  $('.navbar').css 'opacity', $(document).scrollTop() / 3000
-  return
 
-detectmob = ->
-  if window.innerWidth <= 800 and window.innerHeight <= 600
-    true
+
+
+window.addEventListener "scroll", (->
+  if window.scrollY > 400
+    $(".navbar").fadeIn()
   else
-    false
+    $(".navbar").fadeOut()
+  return
+), false
+
+ 
