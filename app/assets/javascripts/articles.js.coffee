@@ -44,3 +44,9 @@ $ ->
 $(document).on 'scroll', (e) ->
   $('.navbar').css 'opacity', $(document).scrollTop() / 3000
   return
+
+detectmob = ->
+  if window.innerWidth <= 800 and window.innerHeight <= 600
+    true
+  else
+    false
