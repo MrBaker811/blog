@@ -40,11 +40,7 @@ $ ->
 
   return
 
-window.addEventListener "scroll", (->
-  if window.scrollY > 400
-    $(".navbar").fadeIn()
-  else
-    $(".navbar").fadeOut()
-  return
-), false
 
+$(document).on 'scroll', (e) ->
+  $('.navbar').css 'opacity', $(document).scrollTop() / 3000
+  return

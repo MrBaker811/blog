@@ -1,3 +1,25 @@
+
+fading navbar java = 
+window.addEventListener "scroll", (->
+  if window.scrollY > 400
+    $(".navbar").fadeIn()
+  else
+    $(".navbar").fadeOut()
+  return
+), false
+
+
+
+
+
+
+
+
+
+
+
+
+
 <center><p_1><%= link_to "Read On...", article %></p_1></center>
 
 
