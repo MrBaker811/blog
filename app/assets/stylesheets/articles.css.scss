@@ -70,7 +70,7 @@ text-align: center;
 font: bold 30px/30px Rock Salt;
 width: 100%;
 margin-left: 6%;
-color: #7f8c8d;
+color: black;
 }
 
 h1_6{
@@ -172,25 +172,31 @@ padding-right: 50px;
 p_3 {
 font-family: Rock Salt, Sans-Serif;
 font-size: 500%;
-color: #f1c40f;
+color: #1abc9c;
 position: absolute;
  z-index:100;
 margin-left: 75%; 
- 
+ opacity: 0.7;
  font-weight:bold;
+
+}
+
+.dateline{
+  margin-left: 54%;
 
 }
 
 p_10{
   font-family: Rock Salt, Sans-Serif;
 font-size: 100%;
-color: red;
+color: white;
 position: absolute;
  z-index:100;
 margin-left: 23.9%; 
  opacity: 0.7;
  font-weight:bold;
-
+  top:430px;
+    
 }
 .hovers{
   position: relative;

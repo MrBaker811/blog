@@ -67,23 +67,27 @@ Crowns
 
 <div class="hovers">
 
-  <%= link_to article do %> 
-  
+  <%= link_to article do %>
+  <div class="dateline"> 
+  <div class="row">
+    <div class="col-md-10">
   <p_10><span class="glyphicon glyphicon-pencil"></span> on
 <strong><%= I18n.t("date.abbr_month_names")[article.created_at.month] %>
 <%= article.created_at.mday %>
 <%= article.created_at.year %></strong></p_10></div>
-
+</div>
+</div>
+</div>
 
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-4">
 <p_3><%= article.title %></p_3></div></div>
 <center><%= image_tag article.photo.url(:medium), :class => "img-responsive" %></center>
 <% end %>
 
 </div>
 </div>
-</div.
+</div>
 <br>
 
 
