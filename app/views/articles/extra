@@ -1,4 +1,21 @@
 
+
+
+
+
+
+
+rotating image css
+-ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+
+
+
+
+
 fading navbar java = 
 $(document).on 'scroll', (e) ->
   $('.navbar').css 'opacity', $(document).scrollTop() / 3000
