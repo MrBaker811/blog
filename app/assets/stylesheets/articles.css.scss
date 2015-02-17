@@ -43,7 +43,7 @@ h1_2{
 text-align: center;
 font: bold 100px/100px Rock Salt, Sans-Serif;
 width: 100%;
-color:#7f8c8d;
+color:#1abc9c;
 
 }
 
@@ -52,7 +52,7 @@ h1_3{
 text-align: center;
 font: bold 25px/25px Rock Salt, Sans-Serif;
 width: 100%;
-color: #1abc9c;
+color: #bdc3c7;
 }
 
 h1_4{
@@ -83,7 +83,9 @@ color: #1abc9c;
 }
 
 
-
+.abcde.collapse .text {
+  display: inline-block;
+}
 .rejust{
   margin-left: 30%;
 }
@@ -172,7 +174,7 @@ padding-right: 50px;
 p_3 {
 font-family: Rock Salt, Sans-Serif;
 font-size: 500%;
-color: white;
+color: black;
 position: absolute;
  z-index:100;
 margin-left: 75%; 
@@ -189,11 +191,11 @@ margin-left: 75%;
 p_10{
   font-family: Rock Salt, Sans-Serif;
 font-size: 100%;
-color:red;
+color:#1abc9c;
 position: absolute;
  z-index:100;
 margin-left: 23.9%; 
- opacity:0.5;
+ 
  font-weight:bold;
   top:430px;
     
@@ -223,7 +225,7 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #e74c3c;
+color: red;
 margin-left: 13%; 
 
 }
@@ -234,7 +236,7 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #8e44ad;
+color: #1abc9c;
 margin-left: 25%; 
 
 }
@@ -245,10 +247,11 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #1abc9c;
+color: #f1c40f;
 margin-left: 38%; 
-
 }
+
+
 
 p_6{
   
