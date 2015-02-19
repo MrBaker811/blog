@@ -1,3 +1,34 @@
+banner- div.wrapper{  
+        float:center; /* important */  
+        position:relative; /* important(so we can absolutely position the description div */  
+    }  
+    div.description{  
+        position:absolute; /* absolute position (so we can position it where we want)*/  
+        bottombottom:0px; /* position will be on bottom */  
+        left:18.5%;  
+        width:63%;  
+        /* styling bellow */  
+        background-color:black;  
+        font-family: 'tahoma';  
+        font-size:15px;  
+        color:white;  
+        opacity:0.6; /* transparency */  
+        filter:alpha(opacity=60); /* IE transparency */  
+    }  
+    p.description_content{  
+        padding:10px;  
+        margin:0px;  
+    }  
+
+    html<div class='wrapper'>  
+ 
+    <div class='description'>  
+        <!-- description content -->  
+        <p class='description_content'>The pack, the basic...</p>  
+        <!-- end description content -->  
+    </div>  
+    <!-- end description div -->  
+</div>  
 
 
 

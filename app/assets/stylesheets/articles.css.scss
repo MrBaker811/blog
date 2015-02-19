@@ -16,6 +16,9 @@ html, body {
  position: static; 
  }
 
+.colored{
+ color:#f1c40f;
+}
 
 h1 {
 color: #34495e;
@@ -43,7 +46,7 @@ h1_2{
 text-align: center;
 font: bold 100px/100px Rock Salt, Sans-Serif;
 width: 100%;
-color:#7f8c8d;
+color:#1abc9c;
 
 }
 
@@ -52,7 +55,7 @@ h1_3{
 text-align: center;
 font: bold 25px/25px Rock Salt, Sans-Serif;
 width: 100%;
-color: #1abc9c;
+color: black;
 }
 
 h1_4{
@@ -196,8 +199,19 @@ margin-left: 23.9%;
  
  font-weight:bold;
   top:430px;
-    
 }
+
+
+
+p_11{
+  font-family: Rock Salt, Sans-Serif;
+
+color:#bdc3c7;
+
+ 
+}
+
+
 .hovers{
   position: relative;
 
@@ -303,26 +317,6 @@ float: right;
 background-image: border-left;
 }
 
-    div.wrapper{  
-        float:center; /* important */  
-        position:relative; /* important(so we can absolutely position the description div */  
-    }  
-    div.description{  
-        position:absolute; /* absolute position (so we can position it where we want)*/  
-        bottombottom:0px; /* position will be on bottom */  
-        left:18.5%;  
-        width:63%;  
-        /* styling bellow */  
-        background-color:black;  
-        font-family: 'tahoma';  
-        font-size:15px;  
-        color:white;  
-        opacity:0.6; /* transparency */  
-        filter:alpha(opacity=60); /* IE transparency */  
-    }  
-    p.description_content{  
-        padding:10px;  
-        margin:0px;  
-    }  
+   
 
 
