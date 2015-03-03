@@ -63,7 +63,7 @@ font-size: 280%;
 position: absolute;
  z-index:100;
 margin-left: 5%; 
-  color:#f1c40f;
+  
  font-weight:bold;
 
 }
@@ -128,7 +128,10 @@ font: bold 25px/25px Rock Salt, Sans-Serif;
 @media only screen and (min-width: 525px) 
 and (max-width : 768px)  
  {
-	  h1_1{
+	  
+
+
+    h1_1{
 	font: bold 65px/65px Rock Salt, Sans-Serif;
 	
 }
@@ -245,8 +248,8 @@ font-size: 415%;
 
 position: absolute;
  z-index:100;
-margin-left: 5%; 
-  opacity: 0.5;
+margin-left: 10%; 
+
  font-weight:bold;
 
 }
