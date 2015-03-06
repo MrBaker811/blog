@@ -124,14 +124,9 @@ font: bold 25px/25px Rock Salt, Sans-Serif;
  }
 
 }
-@media only screen and (min-width: 481px) 
-and (max-width : 525px)  
- {
-p_10{
-  color:#f1c40f;
-top:305px;
-}
-}
+
+
+
 @media only screen and (min-width: 525px) 
 and (max-width : 768px)  
  {
@@ -191,10 +186,10 @@ font-size: 90%;
 
 position: absolute;
  z-index:100;
-margin-left: 30%; 
+margin-left: 35%; 
 
  font-weight:bold;
-top:475px;
+top:385px;
 }
 
 
@@ -227,7 +222,7 @@ top:475px;
 .btn {
     
     padding: 4.5px 0px;
-    font-size: 17px;
+    font-size: 16.5px;
     line-height: normal;
   
             border-radius: 0px;
