@@ -125,25 +125,27 @@ font: bold 25px/25px Rock Salt, Sans-Serif;
 
 }
 
+
+
+
 @media only screen and (min-width: 526px) 
 and (max-width : 649px)  {
-  p_10{
-  
-font-size: 90%;
-
-color:#1abc9c;
  
-top:375px;
-
   h1_1{
   font: bold 40px/40px Rock Salt, Sans-Serif;
   top: 25%;
 }
 
+
+
+ p_10{
   
+font-size: 90%;
 
-
-
+color:#1abc9c;
+ margin-left: 45%; 
+top:400px;
+}
 
 .image{
  
@@ -154,7 +156,7 @@ top:375px;
 
 .mobilelogo{
   width: 600px;
-  margin-left: -165px;
+  margin-left: 15px;
 }
 
 .mobilegogo{
@@ -191,7 +193,7 @@ font: bold 15px/15px Rock Salt, Sans-Serif
 
 p_3 {
 font-family: Rock Salt, Sans-Serif;
-font-size: 280%;
+font-size: 500%;
 
 position: absolute;
  z-index:100;
@@ -200,7 +202,6 @@ margin-left: 5%;
  font-weight:bold;
 
 }
-
 
 
 
@@ -244,10 +245,11 @@ font: bold 25px/25px Rock Salt, Sans-Serif;
  h1_5
  {font: bold 20px/20px Rock Salt, Sans-Serif;
  }
-}
-
 
 }
+  
+
+
 
 @media only screen and (min-width: 650px) 
 and (max-width : 768px)  
