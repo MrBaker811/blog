@@ -12,6 +12,7 @@ html, body {
    
 }
 
+
  .flick{
  position: static; 
  }
@@ -44,9 +45,9 @@ h1_2{
    
 
 text-align: center;
-font: bold 100px/100px Rock Salt, Sans-Serif;
+font: bold 85px/85px Rock Salt, Sans-Serif;
 width: 100%;
-color:#1abc9c;
+color:#27ae60;
 
 }
 
@@ -70,10 +71,10 @@ color: #f1c40f;
 h1_5{
   
 text-align: center;
-font: bold 30px/30px Rock Salt;
+font: bold 25px/25px Rock Salt;
 width: 100%;
 margin-left: 6%;
-color: black;
+color: #2980b9;
 }
 
 h1_6{
@@ -82,7 +83,16 @@ text-align: center;
 font: bold 47px/47px Rock Salt, Sans-Serif;
 width: 100%;
 margin-left: 6%;
-color: #1abc9c;
+color: #e74c3c;
+}
+
+h1_7{
+  
+text-align: center;
+font: bold 25px/25px Rock Salt;
+width: 100%;
+margin-left: 6%;
+color: #2980b9;
 }
 
 
@@ -90,25 +100,14 @@ color: #1abc9c;
 .rejust{
   margin-left: 30%;
 }
-.email{
-      
-      margin-left: 35%;
-
-}
 
 
-.mystyle input[type="text"] {
-   height: 63px;
-   font-size: 25px;
-   line-height: 50px;
-   width:100%;
-  
-}
+
 
 .ebutton{
 position: absolute;
- margin-left: 45%; 
- top: 10px;
+ margin-left: 13%; 
+ top: 80px;
  z-index: 10;
  }
 
@@ -192,7 +191,7 @@ margin-left: 75%;
 p_10{
   font-family: Rock Salt, Sans-Serif;
 font-size: 100%;
-color:red;
+color:#27ae60;
 position: absolute;
  z-index:100;
 margin-left: 23.9%; 
@@ -213,18 +212,19 @@ color:black;
 
 
 .hovers{
-  position: relative;
+ 
 
 }
 
 .filtered:hover{
 
 opacity:0.3;
-
+ 
 }
 
 
-p_9{ont-family: Rock Salt, Sans-Serif;
+p_9{
+  font-family: Rock Salt, Sans-Serif;
 font-size: 52px;
 color: black;
 
