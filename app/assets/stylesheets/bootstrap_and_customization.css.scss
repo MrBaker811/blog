@@ -4,14 +4,14 @@
 $jumbotron-bg: #27ae60;
 $body-bg: white;
 $font-family-sans-serif:                'Rock Salt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-default-bg: black;
+$navbar-default-bg: #2980b9;
 $navbar-default-link-color: white;
-$navbar-default-link-hover-color: #1abc9c;
+$navbar-default-link-hover-color: #e74c3c;
 $brand-primary: black;
 $brand-success: #d35400;
-$brand-warning: #1abc9c;
+$brand-warning: #e74c3c;
 $thumbnail-bg: #f1c40f;
-$panel-footer-bg: #9b59b6;
+$panel-footer-bg: #2980b9;
 
 
 
@@ -21,7 +21,9 @@ $input-border: #7f8c8d;
 @import 'bootstrap';
 
 
-
+.navbar{
+	opacity: 0.7;
+}
 
 
 .navbar-brand {
