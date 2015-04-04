@@ -225,6 +225,7 @@ color:black;
 
 .filtered:hover{
 
+filter: grayscale(100%);
 opacity:0.3;
  
 }
@@ -345,3 +346,5 @@ background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.p
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 } 
+
+
