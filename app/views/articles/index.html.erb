@@ -23,7 +23,7 @@ Crowns
 
 <div class="container">
 <% if user_signed_in? %>
-<%= link_to 'New video', new_wideo_path, class: "btn btn-success btn-lg" %>
+<%= link_to 'New video', new_wideo_path, class: "btn btn-success btn-lg" %>This is for youtube link videos only.
 <% end %>
 
 
@@ -31,8 +31,9 @@ Crowns
 <center><iframe width="800" height="451" frameborder="0" msallowfullscreen oallowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen name="wistia_embed" class="wistia_embed" scrolling="no" allowtransparency="true" src="//fast.wistia.net/embed/iframe/d08m89hilv?videoFoam=true"></iframe>
 <script src='//fast.wistia.com/static/iframe-api-v1.js'></script></center>
 
-
-
+<% if user_signed_in? %>
+<div id="wistia-upload-widget-6s2cjwxg4r" style="width: 200px; height: 45px;"></div><script src="//fast.wistia.com/javascripts/upload_widget.js"></script><script>var wistia_upload_6s2cjwxg4r = new wistia.UploadWidget({ divId: "wistia-upload-widget-6s2cjwxg4r", publicProjectId: "6s2cjwxg4r", buttonText: "Upload" });</script>
+<% end %>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-543f38c87892c25e" async></script>
 <div class="cop"></div>
