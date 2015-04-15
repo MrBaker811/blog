@@ -363,10 +363,7 @@ background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.p
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 } 
 
-.mantis-3{
- background-color: #bdc3c7;
 
-} 
 
 .showboy{
   background-color: #2980b9;
@@ -378,4 +375,32 @@ background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.p
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
+
+.mantis-3{
+ background-color: #bdc3c7;
+
+} 
+
+.backup{
+border-radius: 50%;
+  border: 2px solid white;
+  width: 55px;
+height:55px;
+ margin-left: 48.5%;
+ 
+top: 10px;
+}
+
+.backup i {
+  
+  margin-left: 27%; 
+  font-size: 28px;
+  color:white;
+  top: 10px;
+}
+
+.backup:hover {
+  background-color: #3498db;
+  border: 2px solid #e74c3c;
+}
 
