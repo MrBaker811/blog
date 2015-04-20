@@ -26,7 +26,7 @@ gem 'panda', '~> 1.6.0'
 gem 'nokogiri', '~> 1.6.4.1'
 gem 'youtube_it', '~> 2.4.2'
 gem 'friendly_id'
-
+gem 'metamagic'
 
 
 
