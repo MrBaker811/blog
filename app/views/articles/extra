@@ -1,4 +1,8 @@
 
+position absolute for opening text
+
+<div class= "image">
+<%= image_tag "shire.jpg", :class => "img-responsive" %>
 
  <i class="glyphicon glyphicon-chevron-up"></i>
 

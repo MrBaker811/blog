@@ -9,9 +9,16 @@ html, body {
 .image{
   position: relative;
    width: 100%; /* for IE 6 */
-   
+
+  text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);
 }
 
+.mantis-4{
+ background-color:#27ae60 ;
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+} 
 
  .flick{
  position: static; 
@@ -30,14 +37,14 @@ padding: 15px;
 }
 
 h1_1 {
-position: absolute;
+
 top: 15%;
 text-align: center;
 font: bold 150px/150px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
 color:  white;
-
+text-shadow: 0px 0px 30px rgba(30, 28, 28, 0.6);
 }
 
 
@@ -66,6 +73,7 @@ font: bold 27px/27px Rock Salt, Sans-Serif;
 width: 100%;
 margin-left: 6%;
 color: #f1c40f;
+
 }
 
 h1_5{
@@ -199,7 +207,7 @@ padding-right: 50px;
 p_3 {
 font-family: Rock Salt, Sans-Serif;
 font-size: 500%;
-color: #e74c3c;
+color: #1abc9c;
 position: absolute;
  z-index:100;
 margin-left: 75%; 
@@ -216,7 +224,7 @@ margin-left: 75%;
 p_10{
   font-family: Rock Salt, Sans-Serif;
 font-size: 100%;
-color:#2980b9;
+color:#e74c3c;
 position: absolute;
  z-index:100;
 margin-left: 23.9%; 
@@ -257,36 +265,36 @@ color: black;
 }
 
 p_5{
- position: absolute;
+
 top: 90%;
 text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
 color: red;
-margin-left: 9%; 
+margin-left: 0%; 
 
 }
 p_7{
- position: absolute;
+ 
 top: 90%;
 text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #27ae60;
-margin-left: 25%; 
+color: #d35400;
+margin-left: 55%; 
 
 }
 p_8{
- position: absolute;
+
 top: 90%;
 text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
 color: #f1c40f;
-margin-left: 38%; 
+margin-left: 0%; 
 }
 
 
@@ -355,6 +363,7 @@ background-image: border-left;
  background-color: #00ebd7;
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 } 
 
 .mantis-2{
