@@ -4,15 +4,15 @@
 $jumbotron-bg: #27ae60;
 $body-bg: white;
 $font-family-sans-serif:                'Rock Salt', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$navbar-default-bg: white;
-$navbar-default-link-color: black;
+$navbar-default-bg: black;
+$navbar-default-link-color: white;
 $navbar-default-link-hover-color: #e74c3c;
 $brand-primary: black;
 $brand-success: #e74c3c;
 $brand-warning: #e74c3c;
-$thumbnail-bg: #f1c40f;
+$thumbnail-bg: #8e44ad;
 $panel-footer-bg: #2980b9;
-
+$navbar-default-brand-hover-color:#f1c40f;
 
 
 $input-border: #7f8c8d;
@@ -23,8 +23,9 @@ $input-border: #7f8c8d;
 
 .navbar{
 	
-	 height: 70px;
+	
 	 padding-top: 8px; 
+	 opacity: 0.7;
 	
 }
 
@@ -36,5 +37,4 @@ $input-border: #7f8c8d;
  
        padding-top: 6px; 
 }
-
 

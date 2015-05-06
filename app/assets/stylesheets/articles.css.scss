@@ -82,7 +82,7 @@ text-align: center;
 font: bold 25px/25px Rock Salt;
 width: 100%;
 margin-left: 6%;
-color: #2980b9;
+color: #ecf0f1;
 }
 
 h1_6{
@@ -118,7 +118,7 @@ text-align: center;
 font: bold 47px/47px Rock Salt, Sans-Serif;
 width: 100%;
 margin-left: 6%;
-color: #f1c40f;
+color: #9b59b6;
 }
 
 h1_10{
@@ -128,6 +128,15 @@ font: bold 22px/22px Shadows Into Light, Sans-Serif;
 width: 100%;
 margin-left: 6%;
 color: black;
+}
+
+h1_11{
+  
+text-align: center;
+font: bold 47px/47px Rock Salt, Sans-Serif;
+width: 100%;
+margin-left: 6%;
+color: #27ae60;
 }
 
 .rejust{
@@ -207,7 +216,7 @@ padding-right: 50px;
 p_3 {
 font-family: Rock Salt, Sans-Serif;
 font-size: 500%;
-color: #1abc9c;
+color: #f1c40f;
 position: absolute;
  z-index:100;
 margin-left: 75%; 
@@ -224,7 +233,7 @@ margin-left: 75%;
 p_10{
   font-family: Rock Salt, Sans-Serif;
 font-size: 100%;
-color:#e74c3c;
+color:red;
 position: absolute;
  z-index:100;
 margin-left: 23.9%; 
@@ -360,14 +369,14 @@ background-image: border-left;
 }  
 
 .mantis{
- background-color: #00ebd7;
+ background-color: #f1c40f;
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 } 
 
 .mantis-2{
- background-color: #f1c40f;
+ background-color: #2980b9;
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 } 
@@ -386,7 +395,7 @@ background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.p
 
 
 .mantis-3{
- background-color: #bdc3c7;
+ background-color: #e74c3c;
 
 } 
 
@@ -400,6 +409,8 @@ height:55px;
 top: 10px;
 }
 
+
+
 .backup i {
   
   margin-left: 27%; 
@@ -408,8 +419,13 @@ top: 10px;
   top: 10px;
 }
 
+.backup i:hover{
+
+   color:#3498db;
+}
+
 .backup:hover {
-  background-color: #3498db;
-  border: 2px solid #e74c3c;
+  background-color: white;
+  border: 2px solid #3498db;
 }
 

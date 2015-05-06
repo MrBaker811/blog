@@ -54,6 +54,14 @@ window.addEventListener "scroll", (->
 ), false
 
 
+if /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  # some code..
+else
+$ ->
+  navMain = $(".navbar-collapse")
+  navMain.on "click", "a", null, ->
+    navMain.collapse "hide"
+  #Now include js files
 
    
  
