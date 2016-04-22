@@ -14,7 +14,7 @@ html, body {
 }
 
 .mantis-4{
- background-color:#27ae60 ;
+ 
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
@@ -54,7 +54,7 @@ h1_2{
 text-align: center;
 font: bold 95px/95px Shadows Into Light, Sans-Serif;
 width: 100%;
-color:#2980b9;
+color:#7f8c8d;
 
 }
 
@@ -82,7 +82,9 @@ text-align: center;
 font: bold 25px/25px Rock Salt;
 width: 100%;
 margin-left: 6%;
-color: #ecf0f1;
+color: #7f8c8d;
+ opacity: 0.7;
+
 }
 
 h1_6{
@@ -91,7 +93,7 @@ text-align: center;
 font: bold 47px/47px Rock Salt, Sans-Serif;
 width: 100%;
 margin-left: 6%;
-color: #e74c3c;
+color: #f1c40f;
 }
 
 h1_7{
@@ -136,7 +138,7 @@ text-align: center;
 font: bold 47px/47px Rock Salt, Sans-Serif;
 width: 100%;
 margin-right: 3%;
-color: #27ae60;
+color: #f1c40f;
 }
 
 .rejust{
@@ -206,7 +208,7 @@ font-size: 20px;
 }
 
 p_2 {
-font-family: Rock Salt, Sans-Serif;
+font-family: Josefin Sans, Sans-Serif;
 font-size: 17px;
 
 
@@ -261,7 +263,7 @@ color:black;
 .filtered:hover{
 
 filter: grayscale(100%);
-opacity:0.3;
+opacity:0.8;
  
 }
 
@@ -280,7 +282,7 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: red;
+color: #8e44ad;
 margin-left: 0%; 
 
 }
@@ -291,7 +293,7 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #d35400;
+color: #f1c40f;
 margin-left: 55%; 
 
 }
@@ -302,7 +304,7 @@ text-align: center;
 font: bold 35px/35px Rock Salt, Sans-Serif;
 width: 100%;
  height: 100%;
-color: #f1c40f;
+color: red;
 margin-left: 0%; 
 }
 
@@ -369,15 +371,15 @@ background-image: border-left;
 }  
 
 .mantis{
- background-color: #f1c40f;
+ background-color: white;
 background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 } 
 
 .mantis-2{
- background-color: #2980b9;
-background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.png");
+ background-color: white;
+
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 } 
 
@@ -395,7 +397,7 @@ background-image: url("http://www.transparenttextures.com/patterns/asfalt-dark.p
 
 
 .mantis-3{
- background-color: #e74c3c;
+ background-color: #f1c40f;
 
 } 
 
@@ -421,11 +423,11 @@ top: 10px;
 
 .backup i:hover{
 
-   color:#3498db;
+   color:#7f8c8d;
 }
 
 .backup:hover {
   background-color: white;
-  border: 2px solid #3498db;
+  border: 2px solid #7f8c8d;
 }
 

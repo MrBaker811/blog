@@ -43,10 +43,8 @@ meta title: "Crowns over Cotton|Long Live Colorful Girls!",
 <div class= "container"> 
  
        
-  
 
- <p_2><%= simple_format @article.text %></p_2>
-
+<p_2><%= @article.text.html_safe %></p_2>
 
 
   
