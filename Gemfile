@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.2.5'
 
 
 
@@ -23,7 +23,7 @@ gem 'gibbon', '~> 1.1.3'
 gem 'aws-sdk', '~> 1.59.0'
 gem 'unicorn'
 gem 'panda', '~> 1.6.0'
-gem 'nokogiri', '~> 1.6.4.1'
+gem 'nokogiri', '~> 1.6', '>= 1.6.7'
 gem 'youtube_it', '~> 2.4.2'
 gem 'friendly_id'
 gem 'metamagic'
